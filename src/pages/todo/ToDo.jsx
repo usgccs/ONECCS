@@ -1,37 +1,73 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
+import TodoItem from "../../components/TodoItem";
 
 function ToDo() {
+
+    const [todo, setTodo] = useState(""); 
     const [todos, setTodos] = useState([]);
-    const [todo, setTodo] = useState("");
-    const [showTodos, setShowTodos] = useState(false);
+
+    const [showTodos, setShowTodos] = useState(false); 
+
+
+    const [counter, setCounter] = useState(0);
+
+
+    /*
+    SUMMARY:
+    UseStates are used to store values in a component.
+    UseStates of arrays and booleans.
+    Conditional rendering.
+    Onclicks and OnChanges.
+    */
+
+
+    //Array UseState explanation
+    //todos = [sam, min8]
+    // ...todos = sam, min8
+    //[sam, min8, cj]
+
+    useEffect(() => {
+        console.log("This is counter");
+    }, [counter])
+
+
+    const handleClick = () => {
+        setShowTodos(!showTodos);
+    }
+
 
 
   return (
     <>
-        {
-            showTodos ? (
-                <div>
-                    <h1>Todo List</h1>
-                    <input type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
-                    <button onClick={() => setTodos([...todos, todo])}>Add Todo</button>
-                    <button onClick={() => setShowTodos(false)}>Hide Todos</button>
-                    <ul>
-                        {todos.map((todo, index) => (
-                            <li key={index}>{todo}</li>
-                        ))}
-                    </ul>
-                </div>
-            ) : (
-                <div>
-                    <h1>Todo List</h1>
-                    <button onClick={() => setShowTodos(true)}>Show Todos</button>
-                </div>
-            )
 
-        }
-      
+{
+    //Conditional rendering
+    showTodos ? (
+        <div>
+            <input type="text" value={todo} onChange={(e) => {setTodo(e.target.value)
+            console.log(todo)}} />
+            <button onClick={() => setTodos([...todos, todo])}>Add</button>
 
+            {//Mapping of arrays
+                todos.map((todo, index) => {
+                    return <div key={index}>
+                        <TodoItem todo={todo} todos={todos} setTodos={setTodos} />
+                    </div>
+                })
+            }        
+
+            <button onClick={() => setShowTodos(false)}>Hide Todos</button>
+
+        </div>
+    ) : (
+        <div>
+            <h1>Counter: {counter}</h1>
+            <button onClick={() => setCounter(counter + 1)}>Increment</button>
+            <button onClick={() => setShowTodos(true)}>Show Todos</button>
+        </div>
+    )
+
+}
 
     </>
   );

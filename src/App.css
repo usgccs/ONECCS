@@ -1,42 +1,58 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  font-family: 'ReadexPro', 'BeVietnamProReg', 'BeVietnamProBold', Arial, sans-serif;
+  --primary-color: #23453D;
+  --light-color: #EBEDEC;
+  --dark-color: #151515;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  color: var(--light-color);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'ReadexPro';
+  src: url(../public/ReadexPro-VariableFont_HEXP\,wght.ttf);
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'BeVietnamProReg';
+  src: url(../public/BeVietnamPro-Regular.ttf);
 }
 
-.card {
-  padding: 2em;
+@font-face {
+  font-family: 'BeVietnamProBold';
+  src: url(../public/BeVietnamPro-Bold.ttf);
 }
 
-.read-the-docs {
-  color: #888;
+@font-face {
+  font-family: 'BeVietnamProExtraBold';
+  src: url(../public/BeVietnamPro-ExtraBold.ttf);
 }
+
+@font-face {
+  font-family: 'BeVietnamProLight';
+  src: url(../public/BeVietnamPro-Light.ttf);
+}
+
+@font-face {
+  font-family: 'BeVietnamProMedium';
+  src: url(../public/BeVietnamPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'BeVietnamProSemiBold';
+  src: url(../public/BeVietnamPro-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'BeVietnamProThin';
+  src: url(../public/BeVietnamPro-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'BeVietnamProExtraLight';
+  src: url(../public/BeVietnamPro-ExtraLight.ttf);
+}
+
+
