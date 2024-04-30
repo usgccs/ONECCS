@@ -6,11 +6,11 @@ import routes from './routes';
 const PageRouter = () => {
     return (
         <Routes>
-        {routes.map((route, index) => (
-            <Route key={index} path={route.path} element={route.element} />
-        ))}
-    </Routes>
+            {routes.map((route, index) => (
+                <Route key={index} path={route.path} element={route.element} />
+            ))}
+        </Routes>
     );
-    }
+}
 
 export default PageRouter;

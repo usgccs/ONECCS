@@ -1,8 +1,8 @@
-.header_main{
+.header_main {
     @apply w-full flex justify-center items-center gap-4;
 }
 
-.header h1{
+.header h1 {
     font-size: 3.2em;
     line-height: 1.1;
     color: beige;
