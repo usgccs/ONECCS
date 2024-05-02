@@ -1,0 +1,23 @@
+.header_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #24435e;
+}
+
+.header p {
+    font-size: 18px;
+    line-height: 1.5; 
+    margin-left: 300px; /* Adjust the value as needed */
+    margin-right: 300px; /* Adjust the value as needed */
+}

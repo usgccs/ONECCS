@@ -1,15 +1,14 @@
 import Layout from "../layout/Layout";
 import "./App.css";
-import SectionHeader from "./components/sectionHeader/SectionHeader";
+import OrgDescription from "./components/orgDescription/OrgDescription";
 
 function App() {
 
   return (
     <>
-    <div className="flex w-full h-full justify-center items-center">
-    <Layout/>
-    <SectionHeader text="Welcome to Our Site!" />
-    </div>
+      <div className="flex w-full h-full justify-center items-center">
+        <Layout />
+      </div>
     </>
   );
 }
