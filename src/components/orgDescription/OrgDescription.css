@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     gap: 4px;
+    background-color: #FFFFFF; /* Use the variable for background color */
+    @apply py-6;
 }
 
 .header {
@@ -10,13 +12,15 @@
 }
 
 .header h1 {
-    font-size: 30px;
+    /* font-size: 30px; */
     font-weight: bold;
     color: #24435e;
+    @apply text-4xl;
 }
 
 .header p {
-    font-size: 18px;
+    @apply text-xl;
+    font-family: 'BeVietnamProLight';
     line-height: 1.5; 
     margin-left: 300px; /* Adjust the value as needed */
     margin-right: 300px; /* Adjust the value as needed */
