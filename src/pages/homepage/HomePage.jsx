@@ -21,11 +21,11 @@ const HomePage = () => {
 
   const [pastProjects, setPastProjects] = useState(null);
 
-  const fetchOrganization = useContentfulOrganization(orgKey);
+  const fetchOrganization = useContentfulOrganization(orgKey); // fetching organization data
 
-  const fetchProjects = useContentfulProjects(orgKey);
+  const fetchProjects = useContentfulProjects(orgKey); // fetching projects data
 
-  const fetchPersons = useContentfulPersons(orgKey);
+  const fetchPersons = useContentfulPersons(orgKey); // fetching persons data
 
   useEffect(() => {
     fetchOrganization().then((entries) => {
@@ -34,16 +34,6 @@ const HomePage = () => {
       console.log(entries.items[0].fields);
     });
   }, [fetchOrganization]);
-
-  /*
-    useEffect(() => {
-        fetchProjects().then((entries) => {
-            setEntries(entries.items);
-            console.log("Projects")
-            console.log(entries.items);
-        });
-    }, [fetchProjects]);
-*/
 
   useEffect(() => {
     fetchProjects().then((entries) => {
@@ -109,6 +99,19 @@ const HomePage = () => {
   return (
     <div className="header_main">
       <h1>Organization Page</h1>
+
+        {
+            // Organization Header Component
+            // Org Images Components
+            // Section Header (Ongoing Projects)
+            // Projects
+            // Section Header (Upcoming Projects)
+            // Projects
+            // Section Header (Past Projects)
+            // Projects
+            // Section Header (Contact Person)
+            // Contact Person Component
+        }
 
       <div>
         {
