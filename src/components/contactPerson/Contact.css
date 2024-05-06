@@ -1,0 +1,16 @@
+.contact_person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-details h2 {
+    /* font-size: 30px; */
+    text-align: center;
+}
+
+.contact-details h3 {
+    /* font-size: 30px; */
+    font-weight: bold;
+}
