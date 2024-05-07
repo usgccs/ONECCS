@@ -1,0 +1,25 @@
+.org_header{
+    @apply w-full flex justify-center items-center flex-row;
+}
+
+.org_header img{
+    @apply w-72;
+}
+
+.logo{
+    @apply w-full flex justify-center items-center;
+    background-color: var(--primary-color);
+}
+
+.org_namespace{
+    @apply w-full h-full flex flex-col justify-center items-center gap-3;
+    background-color: var(--light-color);   
+}
+
+.org_namespace h2{
+    @apply text-6xl font-bold;
+}
+
+.org_namespace h3{
+    @apply text-2xl;
+}

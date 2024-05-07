@@ -5,6 +5,7 @@ import {
 } from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
+import OrgHeader from "../../components/orgheader/OrgHeader";
 
 const HomePage = () => {
   const orgKey = "CSG";
@@ -98,6 +99,9 @@ const HomePage = () => {
 
   return (
     <div className="header_main">
+      
+
+
       <h1>Organization Page</h1>
 
         {
@@ -118,6 +122,7 @@ const HomePage = () => {
           // Conditional rendering of data
           organization && (
             <div>
+              <OrgHeader imgUrl={organization.orgLogo.fields.file.url} orgKey={organization.orgKey} orgName={organization.orgName} />
               <h1>{organization.orgName}</h1>
               <p>{organization.orgDescription}</p>
             </div>
