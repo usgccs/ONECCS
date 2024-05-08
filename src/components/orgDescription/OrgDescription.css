@@ -1,0 +1,28 @@
+.header_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: #FFFFFF; /* Use the variable for background color */
+    @apply py-6;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    /* font-size: 30px; */
+    font-weight: bold;
+    color: #24435e;
+    @apply text-4xl;
+}
+
+.header p {
+    @apply text-xl;
+    font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
+    line-height: 1.5; 
+    margin-left: 300px; /* Adjust the value as needed */
+    margin-right: 300px; /* Adjust the value as needed */
+}
