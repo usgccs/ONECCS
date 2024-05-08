@@ -102,10 +102,6 @@ const HomePage = () => {
   return (
     <div className="header_main">
       
-
-
-      <h1>Organization Page</h1>
-
         {
             // Organization Header Component
             // Org Images Components
@@ -125,22 +121,16 @@ const HomePage = () => {
           organization && (
             <div>
               <OrgHeader imgUrl={organization.orgLogo.fields.file.url} orgKey={organization.orgKey} orgName={organization.orgName} />
-              <h1>{organization.orgName}</h1>
-              <p>{organization.orgDescription}</p>
+              <OrgDescription orgName={organization.orgName} orgDescription={organization.orgDescription} />
             </div>
           )
         }
 
+
         {organization?.orgImages && (
+          // Org Images Components
           <div>
-            <h1>Images</h1>
-            <ul>
-              {organization.orgImages.map((image, index) => (
-                <li key={index}>
-                  <img src={image.fields.file.url} alt={image.fields.title} />
-                </li>
-              ))}
-            </ul>
+            <ImageCarousel images={organization.orgImages} />
           </div>
         )}
 

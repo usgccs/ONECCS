@@ -1,4 +1,3 @@
-import useContentful from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
 import "./OrgDescription.css";
 

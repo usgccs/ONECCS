@@ -21,6 +21,7 @@
 .header p {
     @apply text-xl;
     font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
     line-height: 1.5; 
     margin-left: 300px; /* Adjust the value as needed */
     margin-right: 300px; /* Adjust the value as needed */

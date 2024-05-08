@@ -46,7 +46,7 @@ function ImageCarousel({images})  {
         {images.map((image, index) => (
           <img
             key={index}
-            src={image}
+            src={image.fields.file.url}
             alt={`Image ${index + 1}`}
             className={index === currentImageIndex ? "active" : ""}
           />
