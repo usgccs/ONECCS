@@ -5,6 +5,7 @@ import {
 } from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
+import ImageCarousel from "../../components/ImageCarousel";
 import OrgHeader from "../../components/orgheader/OrgHeader";
 
 const HomePage = () => {
