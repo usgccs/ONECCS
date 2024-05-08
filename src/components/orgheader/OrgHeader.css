@@ -1,5 +1,5 @@
 .org_header{
-    @apply w-full flex justify-center items-center flex-row;
+    @apply w-full h-96 flex justify-center items-center flex-row;
 }
 
 .org_header img{
@@ -7,19 +7,19 @@
 }
 
 .logo{
-    @apply w-full flex justify-center items-center;
+    @apply w-full h-full flex justify-center items-center;
     background-color: var(--primary-color);
 }
 
 .org_namespace{
-    @apply w-full h-full flex flex-col justify-center items-center gap-3;
-    background-color: var(--light-color);   
+    @apply w-full h-full flex flex-col justify-center items-center gap-5;
+    background-color: var(--primary-color);   
 }
 
 .org_namespace h2{
-    @apply text-6xl font-bold;
+    @apply text-9xl font-bold;
 }
 
 .org_namespace h3{
-    @apply text-2xl;
+    @apply text-5xl;
 }
