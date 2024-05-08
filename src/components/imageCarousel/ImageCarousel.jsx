@@ -39,9 +39,7 @@ function ImageCarousel({images})  {
   return (
     <div className="image-carousel-parent">
     <div className="image-carousel">
-      <div className="image-buttons-container">
-        <button className="image-buttons" onClick={prevImage}>b</button>
-      </div>
+      
       <div id="image-holder">
         {images.map((image, index) => (
           <img
@@ -52,9 +50,7 @@ function ImageCarousel({images})  {
           />
         ))}
       </div>
-      <div className="image-buttons-container">
-        <button className="image-buttons" onClick={nextImage}>n</button>
-      </div>
+      
     </div>
     <div className="dot-indicator">
         {images.map((_, index) => (

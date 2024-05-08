@@ -8,8 +8,8 @@ const EventItem = (evntProp) => {
     return (
         <div className={`p-8 w-full sm:py-8 sm:px-24 hero-content flex-col sm:${evntProp.isReversed ? 'flex-row-reverse' : 'flex-row'}`}>
             <div className={`space-y-3 sm:px-2 w-full ${(img != null) ? 'sm:w-8/12' : ''}`}>
-                <h1 className='py-2 px-8 w-max rounded-full bg-[#23453d]'>{name}</h1>
-                <p className='px-8'>Release Date: {date}</p>
+                <h1 className='py-2 px-8 w-max rounded-full bg-[#23453d] text-white'>{name}</h1>
+                <p className='px-8'><strong>Release Date: </strong> {date}</p>
                 {
                     img != null &&
                     <div className='mx-8 sm:py-0 flex sm:hidden items-center justify-center'>

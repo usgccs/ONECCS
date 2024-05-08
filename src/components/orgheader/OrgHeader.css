@@ -1,9 +1,10 @@
 .org_header{
+    color: #FFFFFF;
     @apply w-full h-96 flex justify-center items-center flex-row;
 }
 
 .org_header img{
-    @apply w-72;
+    @apply w-80;
 }
 
 .logo{

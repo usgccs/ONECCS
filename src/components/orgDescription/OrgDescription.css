@@ -1,28 +1,30 @@
-.header_main {
+.header_main_description {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4px;
     background-color: #FFFFFF; /* Use the variable for background color */
-    @apply py-6;
+    @apply w-full py-10 flex-col;
 }
 
-.header {
-    text-align: center;
-}
-
-.header h1 {
+.header_main_description h1 {
     /* font-size: 30px; */
     font-weight: bold;
     color: #24435e;
-    @apply text-4xl;
+    text-align: center;
+    @apply text-5xl;
+
 }
 
-.header p {
+
+.description{
+    @apply flex items-center justify-center px-64 mx-72;
+}
+
+.description p {
     @apply text-xl;
     font-family: 'BeVietnamProLight';
     color: #1c1c1c;
+    text-align: center;
     line-height: 1.5; 
-    margin-left: 300px; /* Adjust the value as needed */
-    margin-right: 300px; /* Adjust the value as needed */
 }

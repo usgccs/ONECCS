@@ -2,11 +2,11 @@ import {
   useContentfulProjects,
   useContentfulPersons,
   useContentfulOrganization,
-} from "../../../hooks/useContentful";
+} from "../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import OrgDescription from "../../components/orgDescription/OrgDescription";
-import ImageCarousel from "../../components/ImageCarousel";
+import ImageCarousel from "../../components/imageCarousel/ImageCarousel";
 import OrgHeader from "../../components/orgheader/OrgHeader";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../components/past-events/PastEventSection";
@@ -16,8 +16,6 @@ const HomePage = () => {
   const orgKey = "CSG";
 
   const [organization, setOrganization] = useState(null);
-
-  const [projects, setEntries] = useState(null);
 
   const [persons, setPersons] = useState(null); // i know its a grammatical error but i am too lazy to change it now
 
@@ -104,19 +102,7 @@ const HomePage = () => {
 
   return (
     <div className="header_main">
-      {
-        // Organization Header Component
-        // Org Images Components
-        // Section Header (Ongoing Projects)
-        // Projects
-        // Section Header (Upcoming Projects)
-        // Projects
-        // Section Header (Past Projects)
-        // Projects
-        // Section Header (Contact Person)
-        // Contact Person Component
-      }
-
+      
       <div>
         {
           // Conditional rendering of data
@@ -144,30 +130,23 @@ const HomePage = () => {
 
         {ongoingProjects && (
           // Section Header (Ongoing Projects)
-          
           <div>
             <SectionHeader header={"Ongoing Projects"} />
-            <EventsSection events={ongoingProjects}/>
+            <EventsSection events={ongoingProjects} />
           </div>
         )}
 
         {upcomingProjects && (
           <div>
             <SectionHeader header={"Upcoming Projects"} />
-            <ul>
-              {upcomingProjects.map((project, index) => (
-                <li key={index}>{project.fields.projectTitle}</li>
-              ))}
-            </ul>
+            <EventsSection events={upcomingProjects} />
           </div>
         )}
 
         {pastProjects && (
           <div>
             <SectionHeader header={"Past Projects"} />
-            
-                <PastEventsSection data={pastProjects} />
-           
+            <PastEventsSection data={pastProjects} />
           </div>
         )}
 
