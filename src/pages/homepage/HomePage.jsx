@@ -5,12 +5,13 @@ import {
 } from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
+import OrgDescription from "../../components/orgDescription/OrgDescription"
 import ImageCarousel from "../../components/ImageCarousel";
 import OrgHeader from "../../components/orgheader/OrgHeader";
 
 const HomePage = () => {
   const orgKey = "CSG";
-
+  
   const [organization, setOrganization] = useState(null);
 
   const [projects, setEntries] = useState(null); 
