@@ -1,49 +1,211 @@
-import useContentful from "../../../hooks/useContentful";
+import {
+  useContentfulProjects,
+  useContentfulPersons,
+  useContentfulOrganization,
+} from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import ImageCarousel from "../../components/ImageCarousel";
+import OrgHeader from "../../components/orgheader/OrgHeader";
 
 const HomePage = () => {
-    const [entry, setEntry] = useState(null);
-    const fetchEntry = useContentful("1LtDDIwATLHp9ecde36Bej");
+  const orgKey = "CSG";
 
-    useEffect(() => {
-      fetchEntry()
-        .then((entry) => {
-            console.log(entry.fields)
-            setEntry(entry)
-    })
-        .catch(console.error);
-    }, []);
+  const [organization, setOrganization] = useState(null);
 
-    return (
-        <div className="header_main">
-        {/* <h1>Home Page</h1> */}
+  const [projects, setEntries] = useState(null); 
 
-        {/* <div>
-            {// Conditional rendering of data
-                entry && (
-                    <div>
-                        <h1>{entry.fields.orgName}</h1>
-                        <p>{entry.fields.orgDescription}</p>
-                    </div>
-                )
-            }
-        </div> */}
+  const [persons, setPersons] = useState(null); // i know its a grammatical error but i am too lazy to change it now
 
-        <h2>
-            <ImageCarousel images = {['https://preview.redd.it/mr-fresh-the-cat-meme-v0-545c7nzqiyhc1.jpg?width=1080&crop=smart&auto=webp&s=5a7c2e0595c347e239740418ccdd1eada4960fde', 'https://yt3.googleusercontent.com/ZhGtIjcZJm0FNcO3TnAXwJJ_EnC9v_PIS_U4CyvRVG0WITvo-zq5UZXvSri-K2QyiEecuftCBpI=s900-c-k-c0x00ffffff-no-rj', 'https://kpopping.com/documents/27/4/4294/230716-NewJeans-Hanni-New-Jeans-at-Inkigayo-documents-4.jpeg?v=4b576', 'https://preview.redd.it/can-someone-photoshop-my-face-onto-this-meme-but-keep-the-v0-1kg7g9ub12fa1.jpg?width=905&format=pjpg&auto=webp&s=c9ea963d1ef07e9f925e2bcc5ed4e364ae031c12']} />
-        </h2>
+  const [upcomingProjects, setUpcomingProjects] = useState(null);
 
-        </div>
+  const [ongoingProjects, setOngoingProjects] = useState(null);
 
-    
+  const [pastProjects, setPastProjects] = useState(null);
 
-        
+  const fetchOrganization = useContentfulOrganization(orgKey); // fetching organization data
 
-    );
+  const fetchProjects = useContentfulProjects(orgKey); // fetching projects data
+
+  const fetchPersons = useContentfulPersons(orgKey); // fetching persons data
+
+  useEffect(() => {
+    fetchOrganization().then((entries) => {
+      setOrganization(entries.items[0].fields);
+      console.log("Organization");
+      console.log(entries.items[0].fields);
+    });
+  }, [fetchOrganization]);
+
+  useEffect(() => {
+    fetchProjects().then((entries) => {
+      setEntries(entries.items);
+      console.log("Projects");
+      console.log(entries.items);
+      filterProjects(entries.items);
+    });
+  }, [fetchProjects]);
+
+  useEffect(() => {
+    console.log("Upcoming Projects");
+    console.log(upcomingProjects);
+  }, [upcomingProjects]);
+
+  useEffect(() => {
+    console.log("Ongoing Projects");
+    console.log(ongoingProjects);
+  }, [ongoingProjects]);
+
+  useEffect(() => {
+    console.log("Past Projects");
+    console.log(pastProjects);
+  }, [pastProjects]);
+
+  useEffect(() => {
+    fetchPersons().then((entries) => {
+      setPersons(entries.items);
+      console.log("Persons");
+      console.log(entries.items);
+    });
+  }, [fetchPersons]);
+
+  // Function to filter projects
+  const filterProjects = (projects) => {
+    const upcoming = [];
+    const ongoing = [];
+    const past = [];
+
+    projects.forEach((project) => {
+      switch (project.fields.projectClassification) {
+        case "Upcoming":
+          upcoming.push(project);
+          break;
+        case "Ongoing":
+          ongoing.push(project);
+          break;
+        case "Past":
+          past.push(project);
+          break;
+        default:
+          console.log(
+            "Unknown project classification:",
+            project.fields.projectClassification
+          );
+      }
+    });
+    setUpcomingProjects(upcoming);
+    setOngoingProjects(ongoing);
+    setPastProjects(past);
+  };
+
+  return (
+    <div className="header_main">
+      
 
 
+      <h1>Organization Page</h1>
+
+        {
+            // Organization Header Component
+            // Org Images Components
+            // Section Header (Ongoing Projects)
+            // Projects
+            // Section Header (Upcoming Projects)
+            // Projects
+            // Section Header (Past Projects)
+            // Projects
+            // Section Header (Contact Person)
+            // Contact Person Component
+        }
+
+      <div>
+        {
+          // Conditional rendering of data
+          organization && (
+            <div>
+              <OrgHeader imgUrl={organization.orgLogo.fields.file.url} orgKey={organization.orgKey} orgName={organization.orgName} />
+              <h1>{organization.orgName}</h1>
+              <p>{organization.orgDescription}</p>
+            </div>
+          )
+        }
+
+        {organization?.orgImages && (
+          <div>
+            <h1>Images</h1>
+            <ul>
+              {organization.orgImages.map((image, index) => (
+                <li key={index}>
+                  <img src={image.fields.file.url} alt={image.fields.title} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {
+          // Conditional rendering of data
+          projects && (
+            <div>
+              <h1>Projects</h1>
+              <ul>
+                {projects.map((project, index) => (
+                  <li key={index}>{project.fields.projectTitle}</li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+
+        {upcomingProjects && (
+          <div>
+            <h1>Upcoming Projects</h1>
+            <ul>
+              {upcomingProjects.map((project, index) => (
+                <li key={index}>{project.fields.projectTitle}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {ongoingProjects && (
+          <div>
+            <h1>Ongoing Projects</h1>
+            <ul>
+              {ongoingProjects.map((project, index) => (
+                <li key={index}>{project.fields.projectTitle}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {pastProjects && (
+          <div>
+            <h1>Past Projects</h1>
+            <ul>
+              {pastProjects.map((project, index) => (
+                <li key={index}>{project.fields.projectTitle}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {
+          // Conditional rendering of data
+          persons && (
+            <div>
+              <h1>Contact Person</h1>
+              <ul>
+                {persons.map((person, index) => (
+                  <li key={index}>{person.fields.name}</li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;
