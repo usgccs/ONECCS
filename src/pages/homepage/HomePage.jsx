@@ -5,16 +5,19 @@ import {
 } from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
-import OrgDescription from "../../components/orgDescription/OrgDescription"
+import OrgDescription from "../../components/orgDescription/OrgDescription";
 import ImageCarousel from "../../components/ImageCarousel";
 import OrgHeader from "../../components/orgheader/OrgHeader";
+import SectionHeader from "../../components/sectionHeader/SectionHeader";
+import PastEventsSection from "../../components/past-events/PastEventSection";
+import EventsSection from "../../components/events/EventsSection";
 
 const HomePage = () => {
   const orgKey = "CSG";
-  
+
   const [organization, setOrganization] = useState(null);
 
-  const [projects, setEntries] = useState(null); 
+  const [projects, setEntries] = useState(null);
 
   const [persons, setPersons] = useState(null); // i know its a grammatical error but i am too lazy to change it now
 
@@ -101,31 +104,36 @@ const HomePage = () => {
 
   return (
     <div className="header_main">
-      
-        {
-            // Organization Header Component
-            // Org Images Components
-            // Section Header (Ongoing Projects)
-            // Projects
-            // Section Header (Upcoming Projects)
-            // Projects
-            // Section Header (Past Projects)
-            // Projects
-            // Section Header (Contact Person)
-            // Contact Person Component
-        }
+      {
+        // Organization Header Component
+        // Org Images Components
+        // Section Header (Ongoing Projects)
+        // Projects
+        // Section Header (Upcoming Projects)
+        // Projects
+        // Section Header (Past Projects)
+        // Projects
+        // Section Header (Contact Person)
+        // Contact Person Component
+      }
 
       <div>
         {
           // Conditional rendering of data
           organization && (
             <div>
-              <OrgHeader imgUrl={organization.orgLogo.fields.file.url} orgKey={organization.orgKey} orgName={organization.orgName} />
-              <OrgDescription orgName={organization.orgName} orgDescription={organization.orgDescription} />
+              <OrgHeader
+                imgUrl={organization.orgLogo.fields.file.url}
+                orgKey={organization.orgKey}
+                orgName={organization.orgName}
+              />
+              <OrgDescription
+                orgName={organization.orgName}
+                orgDescription={organization.orgDescription}
+              />
             </div>
           )
         }
-
 
         {organization?.orgImages && (
           // Org Images Components
@@ -134,23 +142,18 @@ const HomePage = () => {
           </div>
         )}
 
-        {
-          // Conditional rendering of data
-          projects && (
-            <div>
-              <h1>Projects</h1>
-              <ul>
-                {projects.map((project, index) => (
-                  <li key={index}>{project.fields.projectTitle}</li>
-                ))}
-              </ul>
-            </div>
-          )
-        }
+        {ongoingProjects && (
+          // Section Header (Ongoing Projects)
+          
+          <div>
+            <SectionHeader header={"Ongoing Projects"} />
+            <EventsSection events={ongoingProjects}/>
+          </div>
+        )}
 
         {upcomingProjects && (
           <div>
-            <h1>Upcoming Projects</h1>
+            <SectionHeader header={"Upcoming Projects"} />
             <ul>
               {upcomingProjects.map((project, index) => (
                 <li key={index}>{project.fields.projectTitle}</li>
@@ -159,25 +162,12 @@ const HomePage = () => {
           </div>
         )}
 
-        {ongoingProjects && (
-          <div>
-            <h1>Ongoing Projects</h1>
-            <ul>
-              {ongoingProjects.map((project, index) => (
-                <li key={index}>{project.fields.projectTitle}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
         {pastProjects && (
           <div>
-            <h1>Past Projects</h1>
-            <ul>
-              {pastProjects.map((project, index) => (
-                <li key={index}>{project.fields.projectTitle}</li>
-              ))}
-            </ul>
+            <SectionHeader header={"Past Projects"} />
+            
+                <PastEventsSection data={pastProjects} />
+           
           </div>
         )}
 

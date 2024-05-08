@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from 'react';
 
-function SectionHeader(props){
+function SectionHeader({header}){
 
     
 
@@ -10,12 +10,12 @@ function SectionHeader(props){
             backgroundColor: '#ecf0f1',  
             width: '100%',               
             height: 'auto', 
-            padding: '30px',             
+            padding: '20px',             
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            fontFamily: '"Readex Pro", sans-serif', 
-            fontSize: '5vw', 
+            fontFamily: 'ReadexPro', 
+            fontSize: '3vw', 
             color: '#24453E',
             fontWeight: 'bold'
          
@@ -24,7 +24,7 @@ function SectionHeader(props){
     
     return(
         <div  style={styles.headerStyle}>
-            {props.text}
+            {header}
         </div>
     );
 }

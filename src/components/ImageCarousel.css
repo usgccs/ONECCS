@@ -2,6 +2,7 @@
 .image-carousel-parent{
     display: flex;
     flex-direction: column;
+    background-color: #23453D;
 }
 
 /*IMAGE CAROUSEL CONTAINER*/

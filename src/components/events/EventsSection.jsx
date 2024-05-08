@@ -2,12 +2,13 @@
 import { useState, useEffect } from 'react';
 import EventItem from './EventItem';
 
-function EventsSection() {
+function EventsSection({events}) {
     const [eventsArr, setEventsArr] = useState([]);
 
     // TODO: Change `null` to whatever Contentful can return
     useEffect(() => {
-        setEventsArr([
+        setEventsArr(
+            /*[
             {
                 name: "My Event 1",
                 date: "Soon™",
@@ -41,7 +42,9 @@ function EventsSection() {
                     dispText: "Visit Page",
                 }
             }
-        ])
+        ]*/
+    events
+    )
     }, []);
 
 
@@ -54,10 +57,10 @@ function EventsSection() {
         keyCtr++
 
         return <EventItem key={keyCtr}
-            name={event.name}
-            date={event.date}
-            body={event.body}
-            img={event.img}
+            name={event.fields.projectTitle}
+            date={event.fields.projectDate}
+            body={event.fields.projectDescription}
+            img={null}
             extSite={event.extSite}
             isReversed={imageCtr % 2 == 0} />
     })

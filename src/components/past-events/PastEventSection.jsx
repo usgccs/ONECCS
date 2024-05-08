@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import PastEventItem from "./PastEventItem";
 
-function PastEventsSection({}) {
+function PastEventsSection({data}) {
 
     const [pastEvents, setPastEvents] = useState([]);
 
     useEffect(() => {
-        setPastEvents([
+        setPastEvents(
+            /*[
             {
                 name: "Event 1",
                 date: "2022-10-01",
@@ -42,7 +43,10 @@ function PastEventsSection({}) {
                 description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                 logoUrl: "/Frontier.jpg"
             }
-        ]);
+            
+        ]*/
+        data
+    );
     },[])
     console.log(pastEvents)
 
@@ -51,7 +55,7 @@ function PastEventsSection({}) {
         
         <div className="w-full flex flex-wrap gap-12 items-center justify-center">
             {pastEvents && pastEvents.map(event => 
-                <PastEventItem key={event.name} event={event} />
+                <PastEventItem key={event.fields.projectTitle} event={event} />
             )}
         </div>
 
