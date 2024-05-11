@@ -1,0 +1,4 @@
+.header_main_gdsc{
+    @apply w-full flex justify-center items-center gap-4 flex-col;
+}
+
