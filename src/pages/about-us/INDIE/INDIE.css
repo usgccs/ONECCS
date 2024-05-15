@@ -1,1 +1,3 @@
-
+.header_main_pts {
+    @apply w-full flex justify-center items-center gap-4 flex-col;
+}
