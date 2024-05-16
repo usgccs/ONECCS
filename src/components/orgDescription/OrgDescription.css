@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     gap: 4px;
-    background-color: #FFFFFF; /* Use the variable for background color */
+    background-color: #FFFFFF;
+    /* Use the variable for background color */
     @apply w-full py-10 flex-col;
 }
 
@@ -12,19 +13,18 @@
     font-weight: bold;
     color: #24435e;
     text-align: center;
-    @apply text-5xl;
+    @apply text-4xl lg:text-5xl mt-8;
 
 }
 
-
-.description{
-    @apply flex items-center justify-center px-64 mx-72;
+.description {
+    @apply flex items-center justify-center px-24 lg:px-40 mb-8;
 }
 
 .description p {
-    @apply text-xl;
+    @apply text-lg lg:text-xl;
     font-family: 'BeVietnamProLight';
     color: #1c1c1c;
     text-align: center;
-    line-height: 1.5; 
+    line-height: 1.5;
 }

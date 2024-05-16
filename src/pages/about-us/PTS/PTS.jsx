@@ -153,12 +153,14 @@ const PTS = () => {
                     // Conditional rendering of data
                     persons && (
                         <div>
-                            <h1>Contact Person</h1>
-                            <ul>
-                                {persons.map((person, index) => (
-                                    <li key={index}>{person.fields.name}</li>
-                                ))}
-                            </ul>
+                            <SectionHeader header={"Contact Persons"} />
+                            <div className="my-10 text-center">
+                                <ul>
+                                    {persons.map((person, index) => (
+                                        <li key={index}>{person.fields.name}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     )
                 }

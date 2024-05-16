@@ -1,26 +1,26 @@
-.org_header{
+.org_header {
     color: #FFFFFF;
     @apply w-full h-96 flex justify-center items-center flex-row;
 }
 
-.org_header img{
-    @apply w-80;
+.org_header img {
+    @apply w-96;
 }
 
-.logo{
-    @apply w-full h-full flex justify-center items-center;
-    background-color: var(--primary-color);
+.logo {
+    @apply w-full h-full flex justify-center items-center px-10;
+    background-color: #243E39;
 }
 
-.org_namespace{
+.org_namespace {
     @apply w-full h-full flex flex-col justify-center items-center gap-5;
-    background-color: var(--primary-color);   
+    background-image: url(/header-bg.png);
 }
 
-.org_namespace h2{
-    @apply text-9xl font-bold text-center;
+.org_namespace h2 {
+    @apply text-6xl lg:text-9xl font-bold text-center;
 }
 
-.org_namespace h3{
-    @apply text-5xl text-center;
+.org_namespace h3 {
+    @apply text-3xl lg:text-5xl text-center;
 }
