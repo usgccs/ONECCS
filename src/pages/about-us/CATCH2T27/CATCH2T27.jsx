@@ -158,8 +158,10 @@ const CATCH2T27 = () => { // TODO: Change this to your organization name
             <EventsSection events={upcomingProjects} />
           </div>
         )}
-
-        {pastProjects && (
+        
+        {
+          /* Ensure pastProjects does not render when there are no past projects */
+          pastProjects.length > 0 && (
           <div>
             <SectionHeader header={"Past Projects"} />
             <PastEventsSection data={pastProjects} />
