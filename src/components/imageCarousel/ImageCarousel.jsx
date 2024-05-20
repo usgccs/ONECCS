@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./ImageCarousel.css";
 
-function ImageCarousel({images})  {
+function ImageCarousel({ images }) {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   useEffect(() => {
     console.log("Autoplay started");           //will remove these
     const intervalId = setInterval(() => {
@@ -38,21 +38,19 @@ function ImageCarousel({images})  {
 
   return (
     <div className="image-carousel-parent">
-    <div className="image-carousel">
-      
-      <div id="image-holder">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.fields.file.url}
-            alt={`Image ${index + 1}`}
-            className={index === currentImageIndex ? "active" : ""}
-          />
-        ))}
+      <div className="image-carousel w-screen xl:min-h-screen bg-[#243E39]">
+        <div id="image-holder">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.fields.file.url}
+              alt={`Image ${index + 1}`}
+              className={index === currentImageIndex ? "active" : ""}
+            />
+          ))}
+        </div>
       </div>
-      
-    </div>
-    <div className="dot-indicator">
+      <div className="dot-indicator my-10">
         {images.map((_, index) => (
           <span
             key={index}

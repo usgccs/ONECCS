@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import EventItem from './EventItem';
 
-function EventsSection({events}) {
+function EventsSection({ events }) {
     const [eventsArr, setEventsArr] = useState([]);
 
     // TODO: Change `null` to whatever Contentful can return
@@ -43,10 +43,9 @@ function EventsSection({events}) {
                 }
             }
         ]*/
-    events
-    )
+            events
+        )
     }, []);
-
 
     let imageCtr = 0, // This counts the number of rows that has an image for purposes of alternating left and right
         keyCtr = 0; // React requires a key when mapped and created by iteration
@@ -60,9 +59,9 @@ function EventsSection({events}) {
             name={event.fields.projectTitle}
             date={event.fields.projectDate}
             body={event.fields.projectDescription}
-            img={null}
-            extSite={event.extSite}
-            isReversed={imageCtr % 2 == 0} />
+            img={event.fields.projectImage?.fields.file.url}
+            extSite={event.fields.extSite}
+            isReversed={imageCtr % 2 === 0} />
     })
 }
 

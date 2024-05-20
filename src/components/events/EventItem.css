@@ -1,0 +1,42 @@
+.event-item {
+    @apply flex flex-row;
+}
+
+.event-item:nth-child(even) {
+    @apply flex-row-reverse;
+}
+
+.event-image {
+    width: calc(40% - 60px);
+}
+
+.event-item:nth-child(even) .event-image {
+    margin-left: 70px;
+    margin-right: 0;
+}
+
+.event-item:nth-child(odd) .event-image {
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+@media (max-width: 896px) {
+    .event-item {
+        @apply flex-col items-center justify-center text-center;
+    }
+
+    .event-item:nth-child(even) {
+        @apply flex-col;
+    }
+
+    .event-item:nth-child(even) .event-image,
+    .event-item:nth-child(odd) .event-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .event-image {
+        margin: 0 auto 30px;
+        width: 45vh;
+    }
+}

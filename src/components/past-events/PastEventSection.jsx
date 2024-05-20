@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PastEventItem from "./PastEventItem";
 
-function PastEventsSection({data}) {
+function PastEventsSection({ data }) {
 
     const [pastEvents, setPastEvents] = useState([]);
 
@@ -45,9 +45,9 @@ function PastEventsSection({data}) {
             }
             
         ]*/
-        data
-    );
-    },[])
+            data
+        );
+    }, [])
     console.log(pastEvents)
 
   return (
