@@ -7,6 +7,7 @@ import CSG from "../pages/about-us/CSG/CSG"
 import GDSC from "../pages/about-us/GDSC/GDSC";
 import ACM from "../pages/about-us/ACM/ACM"
 import INDIE from "../pages/about-us/INDIE/INDIE";
+import MSC from "../pages/about-us/MSC/MSC"
 
 
 const routes = [
@@ -19,6 +20,9 @@ const routes = [
     { path: "/about-us/acm", element: <ACM />, name: "DLSU ACM Student Chapter" },
     { path: "/about-us/pts", element: <PTS />, name: "Peer Tutors Society" },
     { path: "/about-us/indie", element: <INDIE />, name: "Initiators of Development in Interactive Entertainment" },
+    { path: "/about-us/msc", element: <MSC />, name: "Microsoft Student Community" },
+    
+
 ];
 
 export default routes;
