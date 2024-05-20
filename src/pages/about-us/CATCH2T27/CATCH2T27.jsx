@@ -161,10 +161,13 @@ const CATCH2T27 = () => { // TODO: Change this to your organization name
         
         {
           /* Ensure pastProjects does not render when there are no past projects */
-          pastProjects.length > 0 && (
-          <div>
+          pastProjects?.length && (
+            <div className="flex w-full flex-col">
             <SectionHeader header={"Past Projects"} />
-            <PastEventsSection data={pastProjects} />
+            <div className="flex w-full">
+              
+              <PastEventsSection data={pastProjects} />
+            </div>
           </div>
         )}
 

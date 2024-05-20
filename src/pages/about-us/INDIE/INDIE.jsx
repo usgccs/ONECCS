@@ -4,7 +4,7 @@ import {
     useContentfulOrganization,
 } from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
-import "./PTS.css";
+import "./INDIE.css";
 import OrgDescription from "../../../components/orgDescription/OrgDescription";
 import ImageCarousel from "../../../components/imageCarousel/ImageCarousel";
 import OrgHeader from "../../../components/orgheader/OrgHeader";
@@ -12,8 +12,8 @@ import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../../components/past-events/PastEventSection";
 import EventsSection from "../../../components/events/EventsSection";
 
-const PTS = () => {
-    const orgKey = "PTS";
+const INDIE = () => {
+    const orgKey = "INDIE";
 
     const [organization, setOrganization] = useState(null);
 
@@ -100,7 +100,7 @@ const PTS = () => {
     };
 
     return (
-        <div className="header_main_pts">
+        <div className="header_main_indie">
 
             <div>
                 {
@@ -170,4 +170,4 @@ const PTS = () => {
     );
 };
 
-export default PTS; 
+export default INDIE; 

@@ -8,6 +8,7 @@ import GDSC from "../pages/about-us/GDSC/GDSC";
 import ACM from "../pages/about-us/ACM/ACM"
 import INDIE from "../pages/about-us/INDIE/INDIE";
 import MSC from "../pages/about-us/MSC/MSC"
+import CATCH2T27 from "../pages/about-us/CATCH2T27/CATCH2T27";
 
 
 const routes = [
@@ -18,9 +19,9 @@ const routes = [
     { path: "/about-us/pts", element: <PTS />, name: "Peer Tutors Society" },
     { path: "/about-us/gdsc", element: <GDSC />, name: "Google Developer Student Clubs" },
     { path: "/about-us/acm", element: <ACM />, name: "DLSU ACM Student Chapter" },
-    { path: "/about-us/pts", element: <PTS />, name: "Peer Tutors Society" },
     { path: "/about-us/indie", element: <INDIE />, name: "Initiators of Development in Interactive Entertainment" },
     { path: "/about-us/msc", element: <MSC />, name: "Microsoft Student Community" },
+    { path: "/about-us/catch2t27", element: <CATCH2T27 />, name: "Computer Batch 2T27" },
     
 
 ];
