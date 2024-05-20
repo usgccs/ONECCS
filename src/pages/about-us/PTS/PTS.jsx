@@ -143,10 +143,13 @@ const PTS = () => {
                 )}
 
                 {pastProjects && (
-                    <div>
-                        <SectionHeader header={"Past Projects"} />
-                        <PastEventsSection data={pastProjects} />
+                    <div className="flex w-full flex-col">
+                    <SectionHeader header={"Past Projects"} />
+                    <div className="flex w-full">
+                      
+                      <PastEventsSection data={pastProjects} />
                     </div>
+                  </div>
                 )}
 
                 {
