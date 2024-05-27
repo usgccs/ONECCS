@@ -4,6 +4,7 @@ import ShiftingProcesses from "../../../components/shiftingProcesses/ShiftingPro
 import RequestForDocs from "../../../components/requestForDocs/RequestForDocs";
 import AppToGraduate from "../../../components/appToGraduate/AppToGraduate"
 import OnlineSDFO from "../../../components/onlineSDFO/OnlineSDFO"
+import FileComplaint from "../../../components/fileComplaint/FileComplaint"
 
 const Processes = () => {
 
@@ -19,6 +20,8 @@ const Processes = () => {
             <AppToGraduate />
             <SectionHeader header={"Online Submission of SDFO Documents"} />
             <OnlineSDFO />
+            <SectionHeader header={"Filing and Processing of Complaints"} />
+            <FileComplaint />
         </div>
     );
 }
