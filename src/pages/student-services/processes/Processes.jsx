@@ -6,11 +6,14 @@ import AppToGraduate from "../../../components/appToGraduate/AppToGraduate"
 import OnlineSDFO from "../../../components/onlineSDFO/OnlineSDFO"
 import FileComplaint from "../../../components/fileComplaint/FileComplaint"
 import AppCredit from "../../../components/appCredit/AppCredit"
+import ExcusedAbsence from "../../../components/excusedAbsence/ExcusedAbsence"
 
 const Processes = () => {
 
     return (
         <div className="flex flex-col justify-center items-center min-h-screen">
+            <SectionHeader header={"Excused Absence"} />
+            <ExcusedAbsence />
             <SectionHeader header={"Leave of Absence"} />
             <LeaveOfAbsence />
             <SectionHeader header={"Shifting Processes"} />
