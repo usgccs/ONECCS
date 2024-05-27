@@ -13,7 +13,7 @@ function SectionHeader({ header }) {
             justifyContent: 'center',
             alignItems: 'center',
             fontFamily: 'ReadexPro',
-            fontSize: '3vw',
+            fontSize: '32px',
             color: '#24453E',
             fontWeight: 'bold',
         }
