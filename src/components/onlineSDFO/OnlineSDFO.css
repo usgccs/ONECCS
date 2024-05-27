@@ -1,0 +1,18 @@
+.sdfo__main_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: #FFFFFF;
+    /* Use the variable for background color */
+    @apply w-full py-10 flex-col;
+}
+
+.white-link {
+    color: white;
+    text-decoration: none; /* Optional: to remove underline */
+}
+
+.white-link:hover {
+    color: #ddd; /* Optional: change color on hover */
+}

@@ -1,0 +1,30 @@
+.fc__main_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: #FFFFFF;
+    /* Use the variable for background color */
+    @apply w-full py-10 flex-col;
+}
+
+.fc__description {
+    @apply flex w-full flex-col lg:px-40 mb-8;
+}
+
+.fc__description p {
+    @apply text-lg lg:text-xl;
+    font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.white-link {
+    color: white;
+    text-decoration: none; /* Optional: to remove underline */
+}
+
+.white-link:hover {
+    color: #ddd; /* Optional: change color on hover */
+}
