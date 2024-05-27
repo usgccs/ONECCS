@@ -1,0 +1,73 @@
+.loa__main_description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: #FFFFFF;
+    /* Use the variable for background color */
+    @apply w-full py-10 flex-col;
+}
+
+.loa__main_description h1 {
+    /* font-size: 30px; */
+    font-weight: bold;
+    color: #24435e;
+    text-align: center;
+    @apply text-4xl lg:text-5xl mt-8;
+
+}
+
+.loa__description {
+    @apply flex w-full flex-col lg:px-40 mb-8;
+}
+
+.loa__description p {
+    @apply text-lg lg:text-xl;
+    font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.loa__description h2 {
+    @apply text-lg lg:text-2xl;
+    font-family: 'BeVietnamProBold';
+    color: #9bc1bc;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.loa__description h3 {
+    @apply text-lg lg:text-xl;
+    font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.loa__description h4 {
+    @apply text-lg lg:text-xl;
+    font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
+    text-align: justify;
+    line-height: 1.5;
+    padding-left: 20px; /* Adjust the value to your desired indent size */
+    position: relative; /* Needed to use pseudo-element */
+}
+
+.loa__description strong {
+    @apply text-lg lg:text-xl;
+    font-family: 'BeVietnamProBold';
+    color: #1c1c1c;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.white-link {
+    color: white;
+    text-decoration: none; /* Optional: to remove underline */
+}
+
+.white-link:hover {
+    color: #ddd; /* Optional: change color on hover */
+}
