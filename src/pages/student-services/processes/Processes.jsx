@@ -3,6 +3,7 @@ import LeaveOfAbsence from "../../../components/leaveOfAbsence/LeaveOfAbsence";
 import ShiftingProcesses from "../../../components/shiftingProcesses/ShiftingProcesses";
 import RequestForDocs from "../../../components/requestForDocs/RequestForDocs";
 import AppToGraduate from "../../../components/appToGraduate/AppToGraduate"
+import OnlineSDFO from "../../../components/onlineSDFO/OnlineSDFO"
 
 const Processes = () => {
 
@@ -16,6 +17,8 @@ const Processes = () => {
             <RequestForDocs />
             <SectionHeader header={"Application to Graduate"} />
             <AppToGraduate />
+            <SectionHeader header={"Online Submission of SDFO Documents"} />
+            <OnlineSDFO />
         </div>
     );
 }
