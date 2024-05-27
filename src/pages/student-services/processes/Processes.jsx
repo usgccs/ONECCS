@@ -1,6 +1,7 @@
 import SectionHeader from "@/components/sectionHeader/SectionHeader";
 import LeaveOfAbsence from "../../../components/leaveOfAbsence/LeaveOfAbsence";
 import ShiftingProcesses from "../../../components/shiftingProcesses/ShiftingProcesses";
+import RequestForDocs from "../../../components/requestForDocs/RequestForDocs";
 
 const Processes = () => {
 
@@ -10,6 +11,8 @@ const Processes = () => {
             <LeaveOfAbsence />
             <SectionHeader header={"Shifting Processes"} />
             <ShiftingProcesses />
+            <SectionHeader header={"Request for Documents"} />
+            <RequestForDocs />
         </div>
     );
 }

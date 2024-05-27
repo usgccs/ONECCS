@@ -1,4 +1,4 @@
-.sp__main_description {
+.rfd__main_description {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     @apply w-full py-10 flex-col;
 }
 
-.sp__main_description h1 {
+.rfd__main_description h1 {
     /* font-size: 30px; */
     font-weight: bold;
     color: #24435e;
@@ -17,11 +17,11 @@
 
 }
 
-.sp__description {
+.rfd__description {
     @apply flex w-full flex-col lg:px-40 mb-8;
 }
 
-.sp__description p {
+.rfd__description p {
     @apply text-lg lg:text-xl;
     font-family: 'BeVietnamProLight';
     color: #1c1c1c;
@@ -29,7 +29,7 @@
     line-height: 1.5;
 }
 
-.sp__description h2 {
+.rfd__description h2 {
     @apply text-lg lg:text-2xl;
     font-family: 'BeVietnamProBold';
     color: #9bc1bc;
@@ -37,7 +37,7 @@
     line-height: 1.5;
 }
 
-.sp__description h3 {
+.rfd__description h3 {
     @apply text-lg lg:text-xl;
     font-family: 'BeVietnamProLight';
     color: #1c1c1c;
@@ -45,7 +45,7 @@
     line-height: 1.5;
 }
 
-.sp__description h4 {
+.rfd__description h4 {
     @apply text-lg lg:text-xl;
     font-family: 'BeVietnamProLight';
     color: #1c1c1c;
@@ -55,7 +55,7 @@
     position: relative; /* Needed to use pseudo-element */
 }
 
-.sp__description h5 {
+.rfd__description h5 {
     @apply text-lg lg:text-xl;
     font-family: 'BeVietnamProLight';
     color: #1c1c1c;
@@ -65,7 +65,7 @@
     position: relative; /* Needed to use pseudo-element */
 }
 
-.sp__description strong {
+.rfd__description strong {
     @apply text-lg lg:text-xl;
     font-family: 'BeVietnamProBold';
     color: #1c1c1c;
