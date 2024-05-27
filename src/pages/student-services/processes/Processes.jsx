@@ -5,6 +5,7 @@ import RequestForDocs from "../../../components/requestForDocs/RequestForDocs";
 import AppToGraduate from "../../../components/appToGraduate/AppToGraduate"
 import OnlineSDFO from "../../../components/onlineSDFO/OnlineSDFO"
 import FileComplaint from "../../../components/fileComplaint/FileComplaint"
+import AppCredit from "../../../components/appCredit/AppCredit"
 
 const Processes = () => {
 
@@ -22,6 +23,8 @@ const Processes = () => {
             <OnlineSDFO />
             <SectionHeader header={"Filing and Processing of Complaints"} />
             <FileComplaint />
+            <SectionHeader header={"Application Course Crediting"} />
+            <AppCredit />
         </div>
     );
 }

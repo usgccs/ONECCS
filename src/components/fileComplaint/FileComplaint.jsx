@@ -15,6 +15,7 @@ const FileComplaint = () => {
                     <a href="http://bit.ly/SDFOOnlineComplaint" className="white-link">Guidelines on Online Filing of Discipline Complaint</a>
                 </button>
             </div>
+            <br></br>
         </div >
     );
 };
