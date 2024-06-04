@@ -12,6 +12,7 @@ import INDIE from "../pages/about-us/INDIE/INDIE";
 import MSC from "../pages/about-us/MSC/MSC"
 import CATCH2T27 from "../pages/about-us/CATCH2T27/CATCH2T27";
 import Processes from "../pages/student-services/processes/Processes";
+import StudentServices from "../pages/student-services/StudentServices";
 
 
 const routes = [
@@ -27,6 +28,7 @@ const routes = [
     { path: "/about-us/indie", element: <INDIE />, name: "Initiators of Development in Interactive Entertainment" },
     { path: "/about-us/msc", element: <MSC />, name: "Microsoft Student Community" },
     { path: "/about-us/catch2t27", element: <CATCH2T27 />, name: "Computer Batch 2T27" },
+    { path: "/student-services", element: <StudentServices/>, name: "Student Services" },
     { path: "/student-services/processes", element: <Processes />, name: "Processes" },
 
 
