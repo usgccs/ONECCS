@@ -89,6 +89,21 @@ function useContentfulPersons(orgKey) {
   return fetchEntries;
 }
 
+function useContentfulFlowcharts() {
+  const keyFlowchart = "CCS-Flowcharts"
+  const fetchEntry = useCallback(async () => {
+    try {
+      const entries = await client.getEntries({
+        content_type: 'flowchart',
+        'fields.objKey[all]': keyFlowchart,
+      });
+      return entries;
+    } catch (err) {
+      console.error(err);
+    }
+  }, [keyFlowchart]);  // Only create a new function if contentType changes
 
+  return fetchEntry;
+}
 
-export {useContentfulEntry, useContentfulContentType, useContentfulProjects, useContentfulPersons, useContentfulOrganization};
+export { useContentfulEntry, useContentfulContentType, useContentfulProjects, useContentfulPersons, useContentfulOrganization, useContentfulFlowcharts };
