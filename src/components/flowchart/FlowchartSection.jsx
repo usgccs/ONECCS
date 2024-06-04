@@ -33,11 +33,9 @@ function FlowchartSection() {
         fetchFlowcharts().then((entries) => {
             setFlowchart(entries.items[0].fields.objFlowchart);
         });
-    }, []);
+    }, [fetchFlowcharts]);
 
-    console.log(flowchartsList)
-
-    return (<>
+    return flowchartsList && (<>
         <div className="p-10 text-center">
             <h1 className="font-black">Flowcharts</h1>
             <p>Access with your DLSU Email<br></br>Do not request access with non-DLSU email accounts</p>
@@ -45,8 +43,7 @@ function FlowchartSection() {
         <div className="flex flex-col flex-wrap items-start justify-center w-full gap-4 sm:flex-row">
             {flowchartsList.map((fcl, index) => { return <FlowchartList key={index} flowchartList={fcl} isDefault={index == 0} /> })}
         </div>
-    </>
-    )
+    </>)
 }
 
 export default FlowchartSection;
