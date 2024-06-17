@@ -7,6 +7,8 @@ const StudentServices = () => {
         <div className="flex flex-col items-center min-h-screen">
             <SectionHeader header={"Enlistments"} />
             <EnlistmentSection />
+            <SectionHeader header={"Enrollment Schedule"} />
+            {/* Carousel */}
             
             <SectionHeader header={"Flowcharts"} />
         </div>

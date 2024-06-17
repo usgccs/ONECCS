@@ -64,8 +64,6 @@ const Dropdown2 = () => {
                             <b>STEP 5:</b> Dropping of classes is still 100% refundable on the first week, 90% on the second, and 80% on the third week. Classes will not be refundable after the third week.
                         </p>
 
-
-                        
                     </div>
                 )}
             </div>

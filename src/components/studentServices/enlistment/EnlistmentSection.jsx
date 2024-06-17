@@ -4,6 +4,7 @@ import EnlistmentItem2 from './EnlistmentItem2';
 import EnlistmentItem3 from './EnlistmentItem3';
 import Dropdown1 from './Dropdown1';
 import Dropdown2 from './Dropdown2';
+import Dropdown3 from './Dropdown3';
 
 
 const EnlistmentSection = () => {
@@ -22,8 +23,8 @@ const EnlistmentSection = () => {
 
         <Dropdown1 />
         <Dropdown2 />
+        <Dropdown3 />
       
-
     </div>
   );
 };
