@@ -14,6 +14,7 @@ import CATCH2T27 from "../pages/about-us/CATCH2T27/CATCH2T27";
 import Processes from "../pages/student-services/processes/Processes";
 import StudentServices from "../pages/student-services/StudentServices";
 import Support from "../pages/support/Support";
+import FinancialAid from "./support/financialAid/financialAid";
 
 
 const routes = [
@@ -31,7 +32,9 @@ const routes = [
     { path: "/about-us/catch2t27", element: <CATCH2T27 />, name: "Computer Batch 2T27" },
     { path: "/student-services", element: <StudentServices/>, name: "Student Services" },
     { path: "/student-services/processes", element: <Processes />, name: "Processes" },
-    { path: "/support", element: <Support />, name: "Support" }
+    { path: "/support", element: <Support />, name: "Support" },
+    { path: "/support/financial-aid", element: <FinancialAid />, name: "Financial Aid"}
+
 
 
 

@@ -1,0 +1,76 @@
+.tfp__main_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background-color: #FFFFFF;
+    @apply w-full py-10 flex-col;
+}
+
+.tfp__description {
+    @apply flex w-full flex-col lg:px-40 mb-8;
+}
+
+.tfp__description p {
+    @apply text-lg lg:text-xl;
+    font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.dropdrowncontainer {
+    @apply flex w-full flex-col lg:px-40 mb-8;
+}
+
+.tfp__dropdowns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.tfp__dropdown {
+    flex: 1;
+    min-width: 200px;
+    max-width: 45%;
+}
+
+.tfp__dropdown__toggle {
+    width: 100%;
+    background-color: transparent;
+    color: #1c1c1c;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.1em;
+    text-decoration: underline;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.tfp__dropdown__content {
+    padding: 10px;
+    background-color: #fff;
+    font-family: 'BeVietnamProLight';
+    color: #1c1c1c;
+    line-height: 1.5;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+}
+
+.tfp__dropdown__content p, 
+.tfp__dropdown__content ol, 
+.tfp__dropdown__content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .tfp__dropdown {
+        max-width: 100%;
+    }
+}
