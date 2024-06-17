@@ -1,0 +1,9 @@
+.sw__header_main{
+    @apply w-full flex justify-center items-center gap-4 flex-col;
+}
+
+.sw__header_h1{
+    font-size: 3.2em;
+    line-height: 1.1;
+    color: beige;
+}

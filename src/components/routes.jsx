@@ -14,6 +14,10 @@ import CATCH2T27 from "../pages/about-us/CATCH2T27/CATCH2T27";
 import Processes from "../pages/student-services/processes/Processes";
 import StudentServices from "../pages/student-services/StudentServices";
 import Support from "../pages/support/Support";
+import Academics from "../pages/support/academics/Academics";
+import FinancialAid from "../pages/support/financial-aid/FinancialAid";
+import MentalHealth from "../pages/support/mental-health/MentalHealth";
+import StudentWelfare from "../pages/support/student-welfare/StudentWelfare";
 
 
 const routes = [
@@ -31,7 +35,11 @@ const routes = [
     { path: "/about-us/catch2t27", element: <CATCH2T27 />, name: "Computer Batch 2T27" },
     { path: "/student-services", element: <StudentServices/>, name: "Student Services" },
     { path: "/student-services/processes", element: <Processes />, name: "Processes" },
-    { path: "/support", element: <Support />, name: "Support" }
+    { path: "/support", element: <Support />, name: "Support" },
+    { path: "/support/academics", element: <Academics />, name: "Academics" },
+    { path: "/support/financial-aid", element: <FinancialAid />, name: "Financial Aid" },
+    { path: "/support/mental-health", element: <MentalHealth />, name: "Mental Health" },
+    { path: "/support/student-welfare", element: <StudentWelfare />, name: "Student Welfare"}
 
 
 
