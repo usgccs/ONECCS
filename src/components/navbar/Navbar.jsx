@@ -107,7 +107,7 @@ const Navbar = () => {
                     <div className="flex flex-wrap">
                         <NavLink to="/" dropdownOptions={null}>Home</NavLink>
                         <NavLink to="/todo" dropdownOptions={[{ to: "about-us/csg", label: "CSG" }, { to: "about-us/catch2t27", label: "CATCH2T27" }, { to: "about-us/catch2t26", label: "CATCH2T26" }, { to: "about-us/catch2t25", label: "CATCH2T25" }, { to: "about-us/catch2t24", label: "CATCH2T24" }, { to: "about-us/acm", label: "ACM" }, { to: "about-us/gdsc", label: "GDSC" }, { to: "about-us/indie", label: "INDIE" }, { to: "about-us/lccsg", label: "LCCSG" }, { to: "about-us/lscs", label: "LSCS" }, { to: "about-us/msc", label: "MSC" }, { to: "/about-us/pts", label: "PTS" }]}>About Us</NavLink>
-                        <NavLink to="/todo" dropdownOptions={[{ to: "/processes", label: "Processes" }]}>Student Services</NavLink>
+                        <NavLink to="/todo" dropdownOptions={[{ to: "/processes", label: "Processes" }, { to: "/faqs", label: "Faqs" }]}>Student Services</NavLink>
                         <NavLink to="/todo" dropdownOptions={[{ to: "/academics", label: "Academics" }, { to: "/financial-aid", label: "Financial Aid" }, { to: "/mental-health", label: "Mental Health" }, { to: "/student-welfare", label: "Student Welfare" }]}>Support</NavLink>
                         <NavLink to="/todo" dropdownOptions={null}>Opportunities</NavLink>
                         <NavLink to="/todo" dropdownOptions={null}>Career Hub</NavLink>
@@ -131,7 +131,7 @@ const Navbar = () => {
                             <div className="flex flex-col">
                                 <MenuLink to="/">Home</MenuLink>
                                 <MenuLink to="/todo" dropdownOptions={[{ to: "/csg", label: "CSG" }, { to: "/catch-27", label: "CATCH2T27" }, { to: "/catch-26", label: "CATCH2T27" }, { to: "/catch-25", label: "CATCH2T25" }, { to: "/catch-24", label: "CATCH2T24" }, { to: "/acm", label: "ACM" }, { to: "/gdsc", label: "GDSC" }, { to: "/indie", label: "INDIE" }, { to: "/lccsg", label: "LCCSG" }, { to: "/lscs", label: "LSCS" }, { to: "/msc", label: "MSC" }, { to: "/pts", label: "PTS" }]}>About Us</MenuLink>
-                                <MenuLink to="/todo" dropdownOptions={[{ to: "/processes", label: "Processes" }]}>Student Services</MenuLink>
+                                <MenuLink to="/todo" dropdownOptions={[{ to: "/processes", label: "Processes" }, { to: "/faqs", label: "Faqs" }]}>Student Services</MenuLink>
                                 <MenuLink to="/todo" dropdownOptions={[{ to: "/academics", label: "Academics" }, { to: "/financial-aid", label: "Financial Aid" }, { to: "/mental-health", label: "Mental Health" }, { to: "/student-welfare", label: "Student Welfare" }]}>Support</MenuLink>
                                 <MenuLink to="/todo" dropdownOptions={null}>Opportunities</MenuLink>
                                 <MenuLink to="/todo" dropdownOptions={null}>Career Hub</MenuLink>
