@@ -1,0 +1,14 @@
+.listdropdown {
+    list-style-type: square;
+    padding-left: 40px; 
+}
+
+.listdropdown li {
+    @apply pl-2 m-2;
+    background-color: lightgray;
+}
+
+.listing {
+    list-style-type: square;
+    padding-left: 40px; 
+}
