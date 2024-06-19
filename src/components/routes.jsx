@@ -19,7 +19,7 @@ import Academics from "../pages/support/academics/Academics";
 import FinancialAid from "../pages/support/financial-aid/FinancialAid";
 import MentalHealth from "../pages/support/mental-health/MentalHealth";
 import StudentWelfare from "../pages/support/student-welfare/StudentWelfare";
-
+import AboutUs from "../pages/about-us/AboutUs";
 
 
 const routes = [
@@ -28,6 +28,7 @@ const routes = [
     { path: "/todo", element: <ToDo />, name: "Todo" },
     { path: "/button", element: <Button />, name: "Button" },
     { path: "/dropdown", element: <Dropdown />, name: "Dropdown" },
+    { path: "/about-us", element: <AboutUs />, name: "About Us"},
     { path: "/about-us/csg", element: <CSG />, name: "Computer Studies Government" },
     { path: "/about-us/pts", element: <PTS />, name: "Peer Tutors Society" },
     { path: "/about-us/gdsc", element: <GDSC />, name: "Google Developer Student Clubs" },

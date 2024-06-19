@@ -106,4 +106,22 @@ function useContentfulFlowcharts() {
   return fetchEntry;
 }
 
-export { useContentfulEntry, useContentfulContentType, useContentfulProjects, useContentfulPersons, useContentfulOrganization, useContentfulFlowcharts };
+
+//query Project using orgKey
+function useContentfulOrgAbout() {
+  const fetchEntries = useCallback(async () => {
+    try {
+      const entries = await client.getEntries({
+        content_type: 'aboutUsOrganizations',
+      });
+      return entries;
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);  
+  return fetchEntries;
+}
+
+
+
+export { useContentfulEntry, useContentfulContentType, useContentfulProjects, useContentfulPersons, useContentfulOrganization, useContentfulFlowcharts, useContentfulOrgAbout };
