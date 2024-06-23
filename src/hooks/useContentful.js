@@ -107,7 +107,6 @@ function useContentfulFlowcharts() {
 }
 
 
-//query Project using orgKey
 function useContentfulOrgAbout() {
   const fetchEntries = useCallback(async () => {
     try {
