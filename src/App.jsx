@@ -1,12 +1,11 @@
 import Layout from "../layout/Layout";
 import "./App.css";
-import OrgDescription from "./components/orgDescription/OrgDescription";
 
 function App() {
 
   return (
     <>
-      <div className="w-screen h-screen">
+      <div className="w-full h-screen">
         <Layout />
       </div>
     </>

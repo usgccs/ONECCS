@@ -37,15 +37,15 @@ function ImageCarousel({ images }) {
   };
 
   return (
-    <div className="image-carousel-parent">
-      <div className="image-carousel w-screen xl:min-h-screen bg-[#243E39]">
-        <div id="image-holder">
+    <div className="flex-1 bg-white items-center justify-center">
+      <div className="flex items-center justify-center w-full h-[540px] bg-[#243E39]">
+        <div id="image-holder" className="w-full max-w-xl sm:max-w-2xl lg:max-w-4xl max-h-max">
           {images.map((image, index) => (
             <img
               key={index}
               src={image.fields.file.url}
+              className={`w-full h-full object-cover absolute transition-all duration-1000 ${index === currentImageIndex ? "opacity-100" : "opacity-0"}`}
               alt={`Image ${index + 1}`}
-              className={index === currentImageIndex ? "active" : ""}
             />
           ))}
         </div>

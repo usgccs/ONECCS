@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaSearch } from "react-icons/fa";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { useState, useEffect, useRef } from 'react';
+import './Navbar.css';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -97,10 +98,10 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex items-center justify-between bg-[#24453E] py-6 px-10 drop-shadow-lg">
+            <div className="flex items-center justify-between bg-[#24453E] py-6 px-10 drop-shadow-lg w-full">
                 <div className="flex items-center">
                     <img src="/LargeWhite.png" className="w-8 h-auto" />
-                    <p className="text-white text-2xl ml-5">ONECCS</p>
+                    <p className="text-white text-3xl ml-5 bebas-neue-regular ">ONECCS</p>
                 </div>
                 <div className="flex-grow"></div>
                 <div className="flex items-center text-lg text-white lg:block hidden">
