@@ -1,9 +1,12 @@
 import { createClient } from 'contentful';
 import { useCallback } from 'react';
 
+const space = import.meta.env.VITE_APP_SPACE_ID;
+const token = import.meta.env.VITE_APP_ACCESS_TOKEN
+
 const client = createClient({
-  space: "61mmmjz7t2hb",
-  accessToken: "F2b0mPULTGQo_9xpxBUtYWuJjLyeUAyjEW6i58I3JDQ",
+  space: space,
+  accessToken: token,
 });
 
 //query using entryID

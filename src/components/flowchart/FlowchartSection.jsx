@@ -36,7 +36,7 @@ function FlowchartSection({flowcharts}) {
     return (
     <>
         <div className="p-4 lg:p-6 text-center">
-            <h1 className="font-black">Flowcharts</h1>
+            <h1 className="font-black text-4xl xl:text-5xl p-2">Flowcharts</h1>
             <p>Access with your DLSU Email<br></br>Do not request access with non-DLSU email accounts</p>
         </div>
         <div className="flex flex-col flex-wrap px-10 pt-1 pb-10 items-start justify-center w-full gap-4 lg:p-0 lg:pb-12 sm:flex-row">

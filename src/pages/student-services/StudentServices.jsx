@@ -3,6 +3,8 @@ import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import { useEffect, useState } from "react";
 import { useContentfulFlowcharts } from "../../hooks/useContentful";
 import FlowchartSection from "../../components/flowchart/FlowchartSection"
+import PageHeader from "../../components/pageHeader/PageHeader";
+import EnrollmentSchedSection from "../../components/studentServices/enrollmentsched/EnrollmentSchedSection";
 
 const StudentServices = () => {
 
@@ -26,8 +28,6 @@ const StudentServices = () => {
 
     Promise.all(fetchPromises)
         .then(results => {
-            console.log("INSIDE");
-            console.log(results);
             const combinedResults = results;
             setFlowcharts(combinedResults);
         })
@@ -39,11 +39,13 @@ const StudentServices = () => {
 
 
     return (
-        <div className="flex flex-col items-center min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen">
+            <PageHeader header={"Student Services"} subheader1={"For your student concerns."} subheader2={"Find Enlistment and Academic Guides here."} />
             <SectionHeader header={"Enlistments"} />
             <EnlistmentSection />
-            <SectionHeader header={"Enrollment Schedule"} />
-            {/* Carousel */}
+            <SectionHeader header={"Enrollment Schedule"} subheader1={"For Term 3, AY 2023 - 2024"} />
+            <EnrollmentSchedSection/>
+
             
             <SectionHeader header={"Flowcharts"} />
             {flowcharts ? (
