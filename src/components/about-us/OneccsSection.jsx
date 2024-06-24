@@ -1,6 +1,6 @@
 const OneccsSection = () => {
   return (
-    <div className="w-full lg:w-[80%] h-full p-8 lg:p-24 flex flex-col xl:flex-row gap-10 lg:gap-24">
+    <div className="w-full lg:w-[80%] h-full p-16 lg:p-24 flex flex-col xl:flex-row gap-10 lg:gap-24">
       
       <div className="w-auto md:w-auto lg:w-auto mx-auto">
         <img

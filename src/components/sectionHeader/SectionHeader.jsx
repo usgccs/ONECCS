@@ -8,19 +8,17 @@ function SectionHeader({ header }) {
             backgroundColor: '#ecf0f1',
             width: '100%',
             height: 'auto',
-            padding: '20px',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             fontFamily: 'ReadexPro',
-            fontSize: '3vw',
             color: '#24453E',
             fontWeight: 'bold',
         }
     };
 
     return (
-        <div style={styles.headerStyle}>
+        <div style={styles.headerStyle} className="text-4xl text-center lg:text-5xl p-7">
             {header}
         </div>
     );
