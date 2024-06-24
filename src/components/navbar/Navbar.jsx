@@ -110,7 +110,7 @@ const Navbar = () => {
                         <NavLink to="/about-us" dropdownOptions={[{ to: "about-us/csg", label: "CSG" }, { to: "about-us/catch2t27", label: "CATCH2T27" }, { to: "about-us/catch2t26", label: "CATCH2T26" }, { to: "about-us/catch2t25", label: "CATCH2T25" }, { to: "about-us/catch2t24", label: "CATCH2T24" }, { to: "about-us/acm", label: "ACM" }, { to: "about-us/gdsc", label: "GDSC" }, { to: "about-us/indie", label: "INDIE" }, { to: "about-us/lccsg", label: "LCCSG" }, { to: "about-us/lscs", label: "LSCS" }, { to: "about-us/msc", label: "MSC" }, { to: "/about-us/pts", label: "PTS" }]}>About Us</NavLink>
                         <NavLink to="/student-services" dropdownOptions={[{ to: "/student-services/processes", label: "Processes" }]}>Student Services</NavLink>
                         <NavLink to="/support" dropdownOptions={[{ to: "support/academics", label: "Academics" }, { to: "support/financial-aid", label: "Financial Aid" }, { to: "support/mental-health", label: "Mental Health" }, { to: "support/student-welfare", label: "Student Welfare" }]}>Support</NavLink>
-                        <NavLink to="/todo" dropdownOptions={null}>Opportunities</NavLink>
+                        <NavLink to="/opportunities" dropdownOptions={null}>Opportunities</NavLink>
                         <NavLink to="/todo" dropdownOptions={null}>Career Hub</NavLink>
                     </div>
                 </div>
