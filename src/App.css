@@ -11,48 +11,48 @@ body {
 
 @font-face {
   font-family: 'ReadexPro';
-  src: url(../public/ReadexPro-VariableFont_HEXP\,wght.ttf);
+  src: url(/ReadexPro-VariableFont_HEXP\,wght.ttf);
   font-style: normal;
 }
 
 @font-face {
   font-family: 'BeVietnamProReg';
-  src: url(../public/BeVietnamPro-Regular.ttf);
+  src: url(/BeVietnamPro-Regular.ttf);
 }
 
 @font-face {
   font-family: 'BeVietnamProBold';
-  src: url(../public/BeVietnamPro-Bold.ttf);
+  src: url(/BeVietnamPro-Bold.ttf);
 }
 
 @font-face {
   font-family: 'BeVietnamProExtraBold';
-  src: url(../public/BeVietnamPro-ExtraBold.ttf);
+  src: url(/BeVietnamPro-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: 'BeVietnamProLight';
-  src: url(../public/BeVietnamPro-Light.ttf);
+  src: url(/BeVietnamPro-Light.ttf);
 }
 
 @font-face {
   font-family: 'BeVietnamProMedium';
-  src: url(../public/BeVietnamPro-Medium.ttf);
+  src: url(/BeVietnamPro-Medium.ttf);
 }
 
 @font-face {
   font-family: 'BeVietnamProSemiBold';
-  src: url(../public/BeVietnamPro-SemiBold.ttf);
+  src: url(/BeVietnamPro-SemiBold.ttf);
 }
 
 @font-face {
   font-family: 'BeVietnamProThin';
-  src: url(../public/BeVietnamPro-Thin.ttf);
+  src: url(/BeVietnamPro-Thin.ttf);
 }
 
 @font-face {
   font-family: 'BeVietnamProExtraLight';
-  src: url(../public/BeVietnamPro-ExtraLight.ttf);
+  src: url(/BeVietnamPro-ExtraLight.ttf);
 }
 
 
