@@ -11,6 +11,7 @@ import OrgHeader from "../../components/orgheader/OrgHeader";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../components/past-events/PastEventSection";
 import EventsSection from "../../components/events/EventsSection";
+import Footer from "@/components/footer/Footer";
 
 const HomePage = () => {
   const orgKey = "CSG";
@@ -101,13 +102,13 @@ const HomePage = () => {
   };
 
   return (
-    <div className="header_main">
+    <div className="w-full max-w-full flex justify-center items-center gap-4 flex-col border-white">
       
-      <div>
+      <div className="w-full flex-1">
         {
           // Conditional rendering of data
           organization && (
-            <div>
+            <div className="w-full">
               <OrgHeader
                 imgUrl={organization.orgLogo.fields.file.url}
                 orgKey={organization.orgKey}
@@ -163,6 +164,8 @@ const HomePage = () => {
             </div>
           )
         }
+
+        <Footer />
       </div>
     </div>
   );
