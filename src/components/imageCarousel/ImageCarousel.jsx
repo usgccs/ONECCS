@@ -38,7 +38,7 @@ function ImageCarousel({ images }) {
 
   return (
     <div className="image-carousel-parent">
-      <div className="image-carousel w-screen xl:min-h-screen bg-[#243E39]">
+      <div className="image-carousel px-5 py-10 xl:px-32 xl:py-10 w-screen xl:min-h-screen xl:w-full bg-[#243E39]">
         <div id="image-holder">
           {images.map((image, index) => (
             <img
@@ -50,7 +50,7 @@ function ImageCarousel({ images }) {
           ))}
         </div>
       </div>
-      <div className="dot-indicator my-10">
+      <div className="dot-indicator mt-10">
         {images.map((_, index) => (
           <span
             key={index}

@@ -17,7 +17,10 @@ const EnlistmentSection = () => {
         <EnlistmentItem3 />
         </div>
       
-      <div className='w-full border-2'></div>
+      <div className='flex items-center justify-center'>
+      <div className='w-[98%] border-2 px-20'></div>
+      </div>
+      
 
       <p className='font-bold text-2xl text-left p-5'>Steps in enlisting your classes:</p>
 

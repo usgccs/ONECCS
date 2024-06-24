@@ -9,10 +9,12 @@
 /*IMAGE CAROUSEL CONTAINER*/
 .image-carousel {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50vh;
     width: 80vh;
+
 }
 
 /*IMAGE CONTAINER*/

@@ -89,19 +89,18 @@ function useContentfulPersons(orgKey) {
   return fetchEntries;
 }
 
-function useContentfulFlowcharts() {
-  const keyFlowchart = "CCS-Flowcharts"
+function useContentfulFlowcharts(idNum) {
   const fetchEntry = useCallback(async () => {
     try {
       const entries = await client.getEntries({
-        content_type: 'flowchart',
-        'fields.objKey[all]': keyFlowchart,
+        content_type: 'aboutUsFlowcharts',
+        'fields.idNum[all]': idNum,
       });
       return entries;
     } catch (err) {
       console.error(err);
     }
-  }, [keyFlowchart]);  // Only create a new function if contentType changes
+  }, [idNum]);  // Only create a new function if contentType changes
 
   return fetchEntry;
 }

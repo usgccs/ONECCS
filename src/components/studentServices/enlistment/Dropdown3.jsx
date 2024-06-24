@@ -10,7 +10,7 @@ const Dropdown3 = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-10">
+    <div className="flex flex-col items-center px-4">
       <div className="w-full">
         <div
           className="flex justify-between items-center cursor-pointer"
@@ -21,7 +21,7 @@ const Dropdown3 = () => {
         </div>
         <hr className="my-4" />
         {showDropdown && (
-          <div className="dropdown-info space-y-4">
+          <div className="dropdown-info space-y-4 mb-6">
             <p className="text-center">
               <b>Payment Deadlines for for A.Y. 2022-2023 Term 2</b>
             </p>
