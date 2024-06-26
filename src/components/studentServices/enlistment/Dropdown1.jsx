@@ -9,7 +9,7 @@ const Dropdown1 = () => {
     };
 
     return (
-        <div className="flex flex-col items-center min-h-screen p-10">
+        <div className="flex flex-col items-center px-4">
             <div className="w-full">
                 <div className="flex justify-between items-center cursor-pointer" onClick={toggleDropdown}>
                     <p className="text-xl">(1) Pre-Enlistment</p>
@@ -17,7 +17,7 @@ const Dropdown1 = () => {
                 </div>
                 <hr className="my-4" />
                 {showDropdown && (
-                    <div className="dropdown-info space-y-4">
+                    <div className="dropdown-info space-y-4 mb-6">
                         <p>
                             <b>Pre-enlistment gives the admin an idea of how many students will enlist in a class,</b> helping them to estimate how many sections they will open for the Enlistment period. Students are usually given a week to pre-enlist - this is enough time for everyone to add courses to enlist in the Animo.sys website.
                         </p>

@@ -13,6 +13,7 @@ const AboutUs = () => {
 
 const fetchOrganizations = useContentfulOrgAbout();
 
+
 const fetchUSGorgs = useContentfulContentType("usgOrganizations");
 
 useEffect(() => {
@@ -26,6 +27,10 @@ useEffect(() => {
         setusgOrgs(entries.items);
     });
 }, [fetchUSGorgs]);
+
+
+
+
 
     return (
         <div className="flex flex-col justify-center items-center min-h-screen">
