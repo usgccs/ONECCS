@@ -11,6 +11,7 @@ import OrgHeader from "../../components/orgheader/OrgHeader";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../components/past-events/PastEventSection";
 import EventsSection from "../../components/events/EventsSection";
+import Contacts from "../../components/contacts/Contacts";
 import Footer from "@/components/footer/Footer";
 
 const HomePage = () => {
@@ -156,11 +157,7 @@ const HomePage = () => {
           persons && (
             <div>
               <h1>Contact Person</h1>
-              <ul>
-                {persons.map((person, index) => (
-                  <li key={index}>{person.fields.name}</li>
-                ))}
-              </ul>
+              <Contacts data={persons} />
             </div>
           )
         }
