@@ -1,4 +1,5 @@
 import SectionHeader from "../../../components/sectionHeader/SectionHeader";
+import PageHeader from "../../../components/pageHeader/PageHeader";
 import './StudentWelfare'
 import PahiramEquipment from "@/components/studentwelfare/PahiramEquipment";
 import PahiramInitiative from "@/components/studentwelfare/PahiramInitiative";

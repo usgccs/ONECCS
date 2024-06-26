@@ -1,9 +1,12 @@
 import { createClient } from 'contentful';
 import { useCallback } from 'react';
 
+const space = import.meta.env.VITE_APP_SPACE_ID;
+const token = import.meta.env.VITE_APP_ACCESS_TOKEN
+
 const client = createClient({
-  space: "61mmmjz7t2hb",
-  accessToken: "F2b0mPULTGQo_9xpxBUtYWuJjLyeUAyjEW6i58I3JDQ",
+  space: space,
+  accessToken: token,
 });
 
 //query using entryID
@@ -89,19 +92,18 @@ function useContentfulPersons(orgKey) {
   return fetchEntries;
 }
 
-function useContentfulFlowcharts() {
-  const keyFlowchart = "CCS-Flowcharts"
+function useContentfulFlowcharts(idNum) {
   const fetchEntry = useCallback(async () => {
     try {
       const entries = await client.getEntries({
-        content_type: 'flowchart',
-        'fields.objKey[all]': keyFlowchart,
+        content_type: 'aboutUsFlowcharts',
+        'fields.idNum[all]': idNum,
       });
       return entries;
     } catch (err) {
       console.error(err);
     }
-  }, [keyFlowchart]);  // Only create a new function if contentType changes
+  }, [idNum]);  // Only create a new function if contentType changes
 
   return fetchEntry;
 }

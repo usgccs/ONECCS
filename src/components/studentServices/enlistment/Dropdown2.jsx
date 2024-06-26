@@ -9,7 +9,7 @@ const Dropdown2 = () => {
     };
 
     return (
-        <div className="flex flex-col items-center min-h-screen p-10">
+        <div className="flex flex-col items-center px-4">
             <div className="w-full">
                 <div className="flex justify-between items-center cursor-pointer" onClick={toggleDropdown}>
                     <p className="text-xl">(2) Enlistment Steps</p>
@@ -17,7 +17,7 @@ const Dropdown2 = () => {
                 </div>
                 <hr className="my-4" />
                 {showDropdown && (
-                    <div className="dropdown-info space-y-4">
+                    <div className="dropdown-info space-y-4 mb-6">
                         <p className="text-center">
                             <b>Before Enlistment</b>
                         </p>

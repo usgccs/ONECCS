@@ -38,7 +38,7 @@ function ImageCarousel({ images }) {
 
   return (
     <div className="flex-1 bg-white items-center justify-center">
-      <div className="flex items-center justify-center w-full h-[540px] bg-[#243E39]">
+      <div className="flex items-center justify-center px-5 py-10 xl:px-32 xl:py-10 w-full h-[540px] xl:w-full bg-[#243E39]">
         <div id="image-holder" className="w-full max-w-xl sm:max-w-2xl lg:max-w-4xl max-h-max">
           {images.map((image, index) => (
             <img
@@ -50,7 +50,7 @@ function ImageCarousel({ images }) {
           ))}
         </div>
       </div>
-      <div className="dot-indicator my-10">
+      <div className="dot-indicator mt-10">
         {images.map((_, index) => (
           <span
             key={index}

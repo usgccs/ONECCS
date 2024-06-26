@@ -1,6 +1,6 @@
 const OrganizationItem = ({ organization }) => {
   return (
-    <div className="w-full lg:w-[80%] h-full p-16 lg:p-24 flex flex-col xl:flex-row gap-10 lg:gap-24">
+    <div className="w-full lg:w-[80%] h-full p-10 lg:p-24 flex flex-col xl:flex-row gap-10 lg:gap-24">
       <div className="w-full md:w-[80%] lg:w-[25%] px-24 lg:p-0 mx-auto">
         <img
           src={

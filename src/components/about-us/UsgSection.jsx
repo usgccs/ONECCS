@@ -6,10 +6,10 @@ const UsgSection = ({usgOrgs}) => {
     <div className="w-full flex items-center justify-center bg-[#24453E]">
       <div className="w-full lg:w-[70%] h-full p-16 lg:p-16 flex flex-col xl:flex-row gap-10 lg:gap-24">
         <div className="w-[100%] flex flex-col gap-8 text-md">
-          <p className="text-left font-bold text-6xl text-white">
+          <p className="text-left font-bold text-4xl lg:text-6xl text-white">
             University Student Government
           </p>
-          <p className="text-justify text-2xl text-white">
+          <p className="text-justify text-xl lg:text-2xl text-white">
             The University Student Government is the democratic and autonomous
             body representing the student body of De La Salle University. Under
             USG are the Computer Studies Government and the different batch
