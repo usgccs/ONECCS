@@ -1,0 +1,112 @@
+/*PARENT CONTAINER*/
+.image-carousel-parent {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*IMAGE CAROUSEL CONTAINER*/
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80%;
+    background-color: #fff;
+}
+
+/*IMAGE CONTAINER*/
+#image-holder {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    z-index: 100;
+}
+
+/*IMAGE STYLE*/
+.image-carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    transition: opacity 1s;
+}
+
+/*BUTTONS CONTAINER*/
+.image-buttons-container {
+    height: 20%;
+    width: 12%;
+}
+
+.image-buttons {
+    border-radius: 10%;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.image-buttons:hover {
+    background-color: #10231ee2;
+}
+
+.image-buttons:focus {
+    outline: none;
+}
+
+/*DOTS CONTAINER*/
+.dot-indicator {
+    display: flex;
+    justify-content: center;
+}
+
+.dot-indicator span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888;
+    margin: 0 5px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.dot-indicator span.active {
+    background-color: #333;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .image-carousel {
+        height: 40vh;
+        width: 90%;
+    }
+
+    .dot-indicator span {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-carousel {
+        height: 30vh;
+        width: 95%;
+    }
+
+    .dot-indicator span {
+        width: 6px;
+        height: 6px;
+        margin: 0 2px;
+    }
+}

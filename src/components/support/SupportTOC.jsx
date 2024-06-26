@@ -18,7 +18,7 @@ function SupportTOC() {
                 <a href="/">
                 <img src={"/support-images/academic-support.png"} alt="Event Logo" className="md:w-48 sm:w-40 w-32 md:h-48 sm:h-40 h-32 aspect-square object-cover" />
                 </a>
-                <a href="/" className="relative group">
+                <a href="/support/academics" className="relative group">
                     <span className='text-xl md:text-2xl text-white text-center'>Academic Support</span>
                     <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
                     <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
@@ -28,14 +28,14 @@ function SupportTOC() {
             <a href="/">
                 <img src={"/support-images/financial-aid.png"} alt="Event Logo" className="md:w-48 sm:w-40 w-32 md:h-48 sm:h-40 h-32 aspect-square object-cover" />
                 </a>
-                <a href="/" className="relative group">
+                <a href="/support/financial-aid" className="relative group">
                     <span className='text-xl md:text-2xl text-white text-center'>Financial Aid</span>
                     <span className="absolute -bottom-1 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
                     <span className="absolute -bottom-1 right-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all"></span>
                 </a>
             </div>
             <div className="flex flex-col items-center md:gap-4 gap-2 justify-center md:w-56 sm:w-52 w-48">
-            <a href="/">
+            <a href="/support/mental-health">
                 <img src={"/support-images/mental-health.png"} alt="Event Logo" className="md:w-48 sm:w-40 w-32 md:h-48 sm:h-40 h-32 aspect-square object-cover" />
                 </a>
                 <a href="/" className="relative group">
@@ -45,7 +45,7 @@ function SupportTOC() {
                 </a>
             </div>
             <div className="flex flex-col items-center md:gap-4 gap-2 justify-center md:w-56 sm:w-52 w-48">
-            <a href="/">
+            <a href="/student-welfare">
                 <img src={"/support-images/student-welfare.png"} alt="Event Logo" className="md:w-48 sm:w-40 w-32 md:h-48 sm:h-40 h-32 aspect-square object-cover" />
                 </a>
                 <a href="/" className="relative group">

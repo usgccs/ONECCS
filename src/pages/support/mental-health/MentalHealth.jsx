@@ -2,6 +2,7 @@ import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 import './MentalHealth'
 import Hotlines from "@/components/mentalHealth/Hotlines";
 import Contacts from "@/components/mentalHealth/Contacts";
+import Footer from "@/components/footer/Footer";
 
 const MentalHealth = () => {
 
@@ -11,6 +12,7 @@ const MentalHealth = () => {
             <Contacts />
             <SectionHeader header={"National Mental Health Crisis Hotline "} />
             <Hotlines/>
+            <Footer/>
         </div>
     );
 }
