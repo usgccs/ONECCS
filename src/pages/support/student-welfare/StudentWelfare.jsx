@@ -3,6 +3,7 @@ import './StudentWelfare'
 import PahiramEquipment from "@/components/studentwelfare/PahiramEquipment";
 import PahiramInitiative from "@/components/studentwelfare/PahiramInitiative";
 import PahiramLocker from "@/components/studentwelfare/PahiramLocker";
+import Footer from "@/components/footer/Footer";
 
 const StudentWelfare = () => {
 
@@ -14,6 +15,8 @@ const StudentWelfare = () => {
             <PahiramLocker/>
             <SectionHeader header={"Pahiram Equipment"}/>
             <PahiramEquipment/>
+            <Footer/>
+            
         </div>
     );
 }

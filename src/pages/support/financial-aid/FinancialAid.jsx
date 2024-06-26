@@ -3,6 +3,7 @@ import InitiativeItem from "@/components/financialAid/initiatives/InitiativesIte
 import InitiativesSection from "@/components/financialAid/initiatives/InitiativesSection";
 import TuitionFeePayment from "@/components/financialAid/tuitionFeePayment/TuitionFeePayment";
 import ScholarshipSection from "@/components/financialAid/initiatives/scholarship/ScholarshipSection";
+import Footer from "@/components/footer/Footer";
 import './FinancialAid'
 
 const FinancialAid = () => {
@@ -15,6 +16,7 @@ const FinancialAid = () => {
             <ScholarshipSection/>
             <SectionHeader header={"USG Office of the Executive Treasurer Initiatives"} />
             <InitiativesSection/>
+            <Footer/>
             
         </div>
     );

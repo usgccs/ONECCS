@@ -21,6 +21,7 @@ import MentalHealth from "../pages/support/mental-health/MentalHealth";
 import StudentWelfare from "../pages/support/student-welfare/StudentWelfare";
 import AboutUs from "../pages/about-us/AboutUs";
 import Opportunities from "@/pages/opportunities/Opportunities";
+import CareerHub from "@/pages/careerhub/CareerHub";
 
 
 const routes = [
@@ -44,7 +45,8 @@ const routes = [
     { path: "/support/financial-aid", element: <FinancialAid />, name: "Financial Aid" },
     { path: "/support/mental-health", element: <MentalHealth />, name: "Mental Health" },
     { path: "/support/student-welfare", element: <StudentWelfare />, name: "Student Welfare"},
-    { path: "/opportunities", element: <Opportunities />, name: "Opportunities"}
+    { path: "/opportunities", element: <Opportunities />, name: "Opportunities"},
+    { path: "/careerhub", element: <CareerHub />, name: "Career Hub"}
 
 
 
