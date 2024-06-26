@@ -12,7 +12,6 @@ import SectionHeader from "../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../components/past-events/PastEventSection";
 import EventsSection from "../../components/events/EventsSection";
 import Contacts from "../../components/contacts/Contacts";
-import Footer from "@/components/footer/Footer";
 
 const HomePage = () => {
   const orgKey = "CSG";
@@ -161,8 +160,6 @@ const HomePage = () => {
             </div>
           )
         }
-
-        <Footer />
       </div>
     </div>
   );

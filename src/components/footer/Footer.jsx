@@ -22,8 +22,8 @@ const universityStudentGovernment = [
 
 const Footer = () => {
   return (
-    <footer>
-        <div className="min-h-[360px] w-full bg-black">
+    <footer className='min-h-[360px] w-full'>
+        <div className="w-full bg-black">
             <div className="flex w-full text-center justify-center items-center text-white py-8 sm:px-16">
                 <div className="flex flex-col h-full w-fit px-auto items-center justify-center sm:gap-12">
                     <div className="flex flex-row h-40 w-full justify-start items-center gap-4">
