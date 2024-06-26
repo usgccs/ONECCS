@@ -5,12 +5,12 @@ import JobSearch from "@/components/careerhub/JobSearch";
 import TopTechComp from "@/components/careerhub/TopTechComp";
 import Roles from "@/components/careerhub/Roles";
 import InternshipOpportunities from "@/components/careerhub/InternshipOpportunities";
-import Footer from "@/components/footer/Footer";
+import PageHeader from "@/components/pageHeader/PageHeader";
 
 const CareerHub = () => {
     return (
         <div>
-            <h1>CareerHub Header</h1>
+            <PageHeader header={"Career Hub"} subheader1={"Internship Opportunities, Alumni Insights, and"} subheader2={"Valuable resources for your professional growth."} />
             <SectionHeader header={"Alumni Insights"}/>
             <Insights/>
             <SectionHeader header={"Internship Opportunities"}/>
@@ -23,7 +23,6 @@ const CareerHub = () => {
             <Roles/>
             <SectionHeader header={"Job Search Tools"}/>
             <JobSearch/>
-            <Footer/>
         </div>
     );
 }
