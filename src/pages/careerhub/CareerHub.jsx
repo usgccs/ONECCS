@@ -1,4 +1,5 @@
 import SectionHeader from "@/components/sectionHeader/SectionHeader";
+import Insights from "@/components/careerhub/Insights";
 import BestCompanies from "@/components/careerhub/BestCompanies";
 import JobSearch from "@/components/careerhub/JobSearch";
 import TopTechComp from "@/components/careerhub/TopTechComp";
@@ -11,7 +12,7 @@ const CareerHub = () => {
         <div>
             <h1>CareerHub Header</h1>
             <SectionHeader header={"Alumni Insights"}/>
-            <h1>alumni insigns</h1>
+            <Insights/>
             <SectionHeader header={"Internship Opportunities"}/>
             <InternshipOpportunities/>
             <SectionHeader header={"Best Companies to Work for"}/>
