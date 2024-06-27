@@ -56,6 +56,7 @@ const HeroSection = () => {
           </Reveal>
         </div>
       </div>
+      <Reveal>
       <div className="flex  overflow-hidden mt-20">
         <TranslateWrapper>
           <LogoItemsTop />
@@ -67,6 +68,7 @@ const HeroSection = () => {
           <LogoItemsTop />
         </TranslateWrapper>
       </div>
+        
       <div className="flex overflow-hidden mt-4">
         <TranslateWrapper reverse>
           <LogoItemsBottom />
@@ -78,6 +80,7 @@ const HeroSection = () => {
           <LogoItemsBottom />
         </TranslateWrapper>
       </div>
+      </Reveal>
     </section>
     </div>
   );
