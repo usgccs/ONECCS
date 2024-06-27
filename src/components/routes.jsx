@@ -46,7 +46,7 @@ const routes = [
     { path: "/support/mental-health", element: <MentalHealth />, name: "Mental Health" },
     { path: "/support/student-welfare", element: <StudentWelfare />, name: "Student Welfare"},
     { path: "/opportunities", element: <Opportunities />, name: "Opportunities"},
-    { path: "/careerhub", element: <CareerHub />, name: "Career Hub"}
+    { path: "/career-hub", element: <CareerHub />, name: "Career Hub"}
 
 
 

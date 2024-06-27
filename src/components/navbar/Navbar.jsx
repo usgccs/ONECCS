@@ -111,7 +111,7 @@ const Navbar = () => {
                         <NavLink to="/student-services" dropdownOptions={[{ to: "/student-services/processes", label: "Processes" }]}>Student Services</NavLink>
                         <NavLink to="/support" dropdownOptions={[{ to: "support/academics", label: "Academics" }, { to: "support/financial-aid", label: "Financial Aid" }, { to: "support/mental-health", label: "Mental Health" }, { to: "support/student-welfare", label: "Student Welfare" }]}>Support</NavLink>
                         <NavLink to="/opportunities" dropdownOptions={null}>Opportunities</NavLink>
-                        <NavLink to="/todo" dropdownOptions={null}>Career Hub</NavLink>
+                        <NavLink to="/career-hub" dropdownOptions={null}>Career Hub</NavLink>
                     </div>
                 </div>
                 <div className="text-white ml-5 lg:block hidden">
