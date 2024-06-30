@@ -4,7 +4,7 @@ const PahiramLocker = () => {
         <div className="w-auto md:w-auto lg:w-auto mx-auto">
           <img
             src={
-              "https://res.cloudinary.com/dnlrbmzns/image/upload/v1718655631/pdkoqsztsfs5y7txpama.png"
+              "https://lh5.googleusercontent.com/Hn8LtZrJw-6NQsQMEePb801Z3ur-I9rGwXitaMQmZSsiOOtbLWYpZ3TmxAGu5PcTIlwrkUnAhZdRU1LhgLqRasw=w1280"
             }
             className="object-cover rounded-2xl drop-shadow-md"
           />
