@@ -4,7 +4,7 @@ import "./ExcusedAbsence.css";
 const ExcusedAbsence = () => {
 
     return (
-        <div className="ea__main_description">
+        <div className="ea__main_description p-8 lg:p-24">
             <br></br>
             <div className="ea__description">
                 <p>The Associate Deans process ONLY requests for approved absence due to <u>medical and mental health reasons</u>. Please refer to the information below to learn more about the updated guidelines.</p>
@@ -13,7 +13,7 @@ const ExcusedAbsence = () => {
                 <p>You may request an excuse letter by clicking the button below..</p>
             </div>
             <div className="flex flex-col justify-center items-center w-full">
-                <button className="w-96 bg-[#24453E] text-white font-light">
+                <button className="w-fit bg-[#24453E] text-white font-light">
                     <a href="http://bit.ly/CCSExcusedAbsence" className="white-link">CCS Request for Letter of Excused Absence</a>
                 </button>
             </div>

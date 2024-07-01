@@ -27,7 +27,7 @@ import {
 const HeroSection = () => {
   return (
     <div className="w-full bg-[#24453E]">
-    <section className="text-slat-100 overflow-hidden bg-[url('/hero.png')] bg-top bg-no-repeat min-h-screen px-8 py-24 md:px-12 md:py-32">
+    <section className="text-slat-100 overflow-hidden bg-[url('/heroo.png')] bg-left bg-no-repeat min-h-screen px-8 py-24 md:px-12 md:py-32 2xl:bg-top">
       <div className="relative mx-auto max-w-5xl">
         <div className="pointer-events-none relative z-10">
         <Reveal>

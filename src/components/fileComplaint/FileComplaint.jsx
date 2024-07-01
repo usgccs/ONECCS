@@ -4,7 +4,7 @@ import "./FileComplaint.css";
 const FileComplaint = () => {
 
     return (
-        <div className="fc__main_description">
+        <div className="fc__main_description p-8 lg:p-24">
             <div className="fc__description">
                 <br></br>
                 <br></br>

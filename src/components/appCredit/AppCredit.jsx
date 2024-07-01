@@ -4,12 +4,12 @@ import "./AppCredit.css";
 const AppCredit = () => {
 
     return (
-        <div className="ac__main_description">
+        <div className="ac__main_description p-8 lg:p-24">
             <div className="ac__description">
                 <p>Submit an application through the Google form of their respective college/school:</p>
             </div>
             <div className="flex flex-col justify-center items-center w-full">
-                <button className="w-96 bg-[#24453E] text-white font-light m-4">
+                <button className="w-fit bg-[#24453E] text-white font-light m-4">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJ11ZZHV4WOR6r4p8Muy5LYOLr95J7EqDpvFfKe7uxh6-PSQ/viewform" className="white-link">Course Crediting for CCS</a>
                 </button>
             </div>
