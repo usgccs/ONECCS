@@ -7,44 +7,6 @@ function PastEventsSection({ data }) {
 
     useEffect(() => {
         setPastEvents(
-            /*[
-            {
-                name: "Event 1",
-                date: "2022-10-01",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                logoUrl: "/Frontier.jpg"
-            },
-            {
-                name: "Event 2",
-                date: "2022-11-15",
-                description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                logoUrl: "/Frontier.jpg"
-            },
-            {
-                name: "Event 3",
-                date: "2022-12-05",
-                description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                logoUrl: "/Frontier.jpg"
-            },{
-                name: "Event 1",
-                date: "2022-10-01",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                logoUrl: "/Frontier.jpg"
-            },
-            {
-                name: "Event 2",
-                date: "2022-11-15",
-                description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                logoUrl: "/Frontier.jpg"
-            },
-            {
-                name: "Event 3",
-                date: "2022-12-05",
-                description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                logoUrl: "/Frontier.jpg"
-            }
-            
-        ]*/
             data
         );
     }, [])

@@ -4,6 +4,7 @@ import ToDo from "../pages/todo/ToDo";
 import Button from "../pages/todo/Button";
 import Dropdown from "../pages/todo/Dropdown";
 import OrgDescription from "./orgDescription/OrgDescription";
+import LCCSG from "@/pages/about-us/LCCSG/LCCSG";
 import PTS from "../pages/about-us/PTS/PTS";
 import CSG from "../pages/about-us/CSG/CSG"
 import GDSC from "../pages/about-us/GDSC/GDSC";
@@ -22,6 +23,7 @@ import StudentWelfare from "../pages/support/student-welfare/StudentWelfare";
 import AboutUs from "../pages/about-us/AboutUs";
 import Opportunities from "@/pages/opportunities/Opportunities";
 import CareerHub from "@/pages/careerhub/CareerHub";
+// import { path } from "animejs";
 
 
 const routes = [
@@ -32,6 +34,7 @@ const routes = [
     { path: "/dropdown", element: <Dropdown />, name: "Dropdown" },
     { path: "/about-us", element: <AboutUs />, name: "About Us"},
     { path: "/about-us/csg", element: <CSG />, name: "Computer Studies Government" },
+    { path: "/about-us/lccsg", element: <LCCSG />, name: "La Salle Computer Society Government"},
     { path: "/about-us/pts", element: <PTS />, name: "Peer Tutors Society" },
     { path: "/about-us/gdsc", element: <GDSC />, name: "Google Developer Student Clubs" },
     { path: "/about-us/acm", element: <ACM />, name: "DLSU ACM Student Chapter" },
