@@ -57,7 +57,7 @@ const HeroSection = () => {
         </div>
       </div>
       <Reveal>
-      <div className="flex  overflow-hidden mt-20">
+      <div className="flex overflow-hidden mt-20">
         <TranslateWrapper>
           <LogoItemsTop />
         </TranslateWrapper>
