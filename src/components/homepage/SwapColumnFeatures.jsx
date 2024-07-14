@@ -2,27 +2,53 @@ import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { FiDollarSign, FiEye, FiPlay, FiSearch } from "react-icons/fi";
 
-
 const styles = {
-    headerStyle: {
-        backgroundColor: '#ecf0f1',
-        width: '100%',
-        height: 'auto',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontFamily: 'ReadexPro',
-        color: '#24453E',
-        fontWeight: 'bold',
-    }
+  headerStyle: {
+    backgroundColor: "#ecf0f1",
+    width: "100%",
+    height: "auto",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontFamily: "ReadexPro",
+    color: "#24453E",
+    fontWeight: "bold",
+  },
+};
+
+const ElfsightWidget = () => {
+  useEffect(() => {
+    // Dynamically load the Elfsight script
+    const script = document.createElement("script");
+    script.src = "https://static.elfsight.com/platform/platform.js";
+    script.setAttribute("data-use-service-core", "");
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup the script when the component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  return (
+    <div
+      className="elfsight-app-d040d224-ad20-4b4c-a853-9e19d9a6b921"
+      data-elfsight-app-lazy
+      style={{ width: "100%", height: "100%" }}
+    ></div>
+  );
 };
 
 const Example = () => {
   return (
     <>
-      <div style={styles.headerStyle} className="text-5xl flex-col text-center lg:text-6xl p-16">
-            <p className="p-4">Communication Channels</p>
-        </div>
+      <div
+        style={styles.headerStyle}
+        className="text-5xl flex-col text-center lg:text-6xl p-16"
+      >
+        <p className="p-4">Communication Channels</p>
+      </div>
       <SwapColumnFeatures />
       <div className="flex h-48 items-center justify-center bg-indigo-600">
         <span className="font-semibold uppercase text-white">Scroll up</span>
@@ -125,25 +151,24 @@ const Content = ({ setFeatureInView, featureInView }) => {
 
 const ExampleFeature = ({ featureInView }) => {
   return (
-    <div className="relative h-96 w-full rounded-xl bg-slate-800 shadow-xl">
-        <div className="flex w-full gap-1.5 rounded-t-xl bg-slate-900 p-3">
+    <div className="relative h-96 z-20 w-full rounded-xl bg-slate-800 shadow-xl">
+      <div className="flex w-full gap-1.5 rounded-t-xl bg-slate-900 p-3">
         <div className="h-3 w-3 rounded-full bg-red-500" />
         <div className="h-3 w-3 rounded-full bg-yellow-500" />
         <div className="h-3 w-3 rounded-full bg-green-500" />
       </div>
-      
-      
-      {featureInView.iframeSrc && (
-        <iframe 
+
+      {featureInView.mode == "Discord" && (
+        <iframe
           src={featureInView.iframeSrc}
-          style={{ width: '100%', height: '100%' }}
+          style={{ width: "100%", height: "100%" }}
           allowTransparency="true"
           frameBorder="0"
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
         ></iframe>
       )}
 
-      
+      {featureInView.mode == "Facebook" && <ElfsightWidget />}
     </div>
   );
 };
@@ -153,6 +178,7 @@ export default Example;
 const features = [
   {
     id: 1,
+    mode: "Discord",
     callout: "Find people",
     title: "CCS Network",
     description:
@@ -164,6 +190,7 @@ const features = [
   {
     id: 2,
     callout: "Find people",
+    mode: "Facebook",
     title: "They're all here",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto quaerat qui, illo incidunt suscipit fugiat distinctio officia earum eius quae officiis quis harum animi.",

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function HomeTOC() {
   return (
     <section id="table-of-contents" className="flex flex-col gap-10 w-full xl:p-20 xl:px-40 lg:p-14 lg:px-20 sm:p-10 p-8 sm:px-20 bg-white ">
-        <div className="w-full text-center justify-center">
+        <div id="help-section" className="w-full text-center justify-center">
             <p>
                 <span className="text-6xl font-bold text-black">How can we help you?</span>
             </p>

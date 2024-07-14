@@ -31,10 +31,10 @@ const HeroSection = () => {
       <div className="relative mx-auto max-w-5xl">
         <div className="pointer-events-none relative z-10">
         <Reveal>
-            <p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-3xl">
+            <p className="pointer-events-auto max-w-xl text-xl text-slate-300 md:text-3xl">
               De La Salle University
             </p>
-            <p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-3xl">
+            <p className="pointer-events-auto max-w-xl text-xl text-slate-300 md:text-3xl">
               College of Computer Studies
             </p>
           </Reveal>
@@ -50,7 +50,8 @@ const HeroSection = () => {
           </Reveal>
           
           <Reveal>
-            <button className="pointer-events-auto mt-4 rounded-full border border-white bg-transparent px-4 py-2 font-medium text-white transition-all active:scale-95 md:mt-6">
+            <button className="pointer-events-auto mt-4 rounded-full border border-white text-md md:text-lg bg-transparent px-4 py-2 font-medium hover:color-[#535bf2] text-white transition-all active:scale-95 md:mt-6"
+            onClick={() => document.getElementById('table-of-contents').scrollIntoView({ behavior: 'smooth' })}>
             Get Started
             </button>
           </Reveal>
