@@ -1,12 +1,27 @@
-// just testing muna
+/*
 
+TODO: 
+pre-requisite:
+- put your organization data in contentful
+
+1. create orgpage folder under src/pages/about-us (ex. about-us/LSCS)
+2. create LSCS.jsx and LSCS.css under orgpage folder
+3. copy the code below to LSCS.jsx file and the LSCS.css file
+4. rename the classnames and variables to your organization name (ex. LSCS)
+   * classname, orgKey, and export default in the bottom of the file
+5. rename the orgname in the css file (ex. .header_main_lscs)
+6. add LSCS routes to components/routes.jsx route should be about-us/LSCS
+   *ensure that you have imported the file properly in routes.jsx
+7. View your new page in the browser to see if it works
+
+*/
 import {
     useContentfulProjects,
     useContentfulPersons,
     useContentfulOrganization,
   } from "../../../hooks/useContentful";
   import React, { useEffect, useState } from "react";
-  import "./MSC.css";
+  import "./CATCH2T24.css";
   import OrgDescription from "../../../components/orgDescription/OrgDescription";
   import ImageCarousel from "../../../components/imageCarousel/ImageCarousel";
   import OrgHeader from "../../../components/orgheader/OrgHeader";
@@ -15,8 +30,8 @@ import {
   import EventsSection from "../../../components/events/EventsSection";
   import Contacts from "../../../components/contacts/Contacts";
   
-  const MSC = () => { // TODO: Change this to your organization name
-    const orgKey = "MSC"; // TODO: Change this to your orgKey
+  const CATCH2T24 = () => { // TODO: Change this to your organization name
+    const orgKey = "CATCH2T24"; // TODO: Change this to your orgKey
   
     const [organization, setOrganization] = useState(null);
   
@@ -103,9 +118,9 @@ import {
     };
   
     return (
-      <div className="header_main_msc">
+      <div className="header_main_catch2t24">
         
-        <div>
+        <div className="w-full flex flex-col">
           {
             // Conditional rendering of data
             organization && (
@@ -133,27 +148,14 @@ import {
           {ongoingProjects && (
             // Section Header (Ongoing Projects)
             <div>
-              <SectionHeader header={"Ongoing Projects"} />
-              <EventsSection events={ongoingProjects} />
-            </div>
-          )}
-  
-          {upcomingProjects && (
-            <div>
-              <SectionHeader header={"Upcoming Projects"} />
-              <EventsSection events={upcomingProjects} />
-            </div>
-          )}
-  
-          {pastProjects && (
-            <div className="flex w-full flex-col">
-            <SectionHeader header={"Past Projects"} />
-            <div className="flex w-full">
+                <SectionHeader header={"Ongoing Projects"} />
+                <EventsSection events={ongoingProjects}/>
               
-              <PastEventsSection data={pastProjects} />
             </div>
-          </div>
           )}
+  
+
+  
   
           {persons && (
             <div className="flex w-full flex-col">
@@ -168,4 +170,4 @@ import {
     );
   };
   
-  export default MSC; // TODO: Change this to your organization name
+  export default CATCH2T24;

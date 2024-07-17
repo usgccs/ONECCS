@@ -8,6 +8,7 @@ function Contacts({ data }) {
                 {data && data.filter((person) => person.fields.lead == true).map((person, index) => (
                     <div key={index} className="flex flex-col items-center gap-2 justify-center md:w-96 sm:w-[340px] w-72">
                         <img src={person.fields.image ? person.fields.image.fields.file.url : '/contact-placeholder.jpg'} alt={person.fields.name + " Picture"} className="rounded-full md:w-64 sm:w-48 w-32 md:h-64 sm:h-48 h-32 aspect-square object-cover" />
+                        <span className='font-semibold text-lg lg:text-xl text-center'>{person.fields.name}</span>
                         <span className='font-semibold text-lg lg:text-xl text-center'>{person.fields.position}</span>
                         <span className='text-base lg:text-lg text-center'>{person.fields.email}</span>
                     </div>
@@ -17,6 +18,7 @@ function Contacts({ data }) {
                 {data && data.filter((person) => person.fields.lead == false).map((person, index) => 
                     <div key={index} className="col-auto flex flex-col items-center gap-2 justify-center md:w-96 sm:w-[340px] w-72">
                         <img src={person.fields.image ? person.fields.image.fields.file.url : '/contact-placeholder.jpg'} alt={person.fields.name + " Picture"} className="rounded-full md:w-64 sm:w-48 w-32 md:h-64 sm:h-48 h-32 aspect-square object-cover" />
+                        <span className='font-semibold text-lg lg:text-xl text-center text-white'>{person.fields.name}</span>
                         <span className='font-semibold text-lg lg:text-xl text-center'>{person.fields.position}</span>
                         <span className='text-base lg:text-lg text-center'>{person.fields.email}</span>
                     </div>

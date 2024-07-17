@@ -24,6 +24,10 @@ import {
     SiGodaddy,
   } from "react-icons/si";
 
+  import LargeWhiteSVG from '/LargeWhite.png';
+  import CSG from '/csg.png';
+  import C24 from '/C24.png';
+  
 const HeroSection = () => {
   return (
     <div className="w-full bg-[#24453E]">
@@ -143,6 +147,8 @@ const TranslateWrapper = ({ children, reverse }) => {
     );
   };
 
+/*
+
   const LogoItem = ({ Icon }) => {
     return (
       <a
@@ -152,6 +158,31 @@ const TranslateWrapper = ({ children, reverse }) => {
         className="w-16 md:w-24 h-16 md:h-24 flex justify-center items-center hover:bg-slate-200 text-gray-400 transition-colors"
       >
         <Icon className="text-6xl md:text-7xl" />
+      </a>
+    );
+  };
+
+  */
+
+  const LogoItem = ({ Icon, isImage = false }) => {
+    return (
+      <a
+        href="/"
+        rel="nofollow"
+        target="_blank"
+        className={`w-16 md:w-24 h-16 md:h-24 flex justify-center items-center hover:bg-slate-500 text-gray-400 transition-colors ${
+          isImage ? "group" : ""
+        }`}
+      >
+        {isImage ? (
+          <img
+            src={Icon}
+            className="text-6xl md:text-7xl group-hover:filter group-hover:grayscale"
+            alt=""
+          />
+        ) : (
+          <Icon className="text-6xl md:text-7xl" />
+        )}
       </a>
     );
   };
@@ -166,9 +197,9 @@ const TranslateWrapper = ({ children, reverse }) => {
       <LogoItem Icon={SiAirtable} />
       <LogoItem Icon={SiAmazon} />
       <LogoItem Icon={SiBox} />
-      <LogoItem Icon={SiBytedance} />
-      <LogoItem Icon={SiChase} />
-      <LogoItem Icon={SiCloudbees} />
+      <LogoItem Icon={C24} isImage={true} />
+      <LogoItem Icon={CSG} isImage={true} />
+      <LogoItem Icon={LargeWhiteSVG} isImage={true} />
     </>
   );
 

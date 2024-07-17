@@ -12,6 +12,9 @@ import ACM from "../pages/about-us/ACM/ACM"
 import INDIE from "../pages/about-us/INDIE/INDIE";
 import MSC from "../pages/about-us/MSC/MSC"
 import CATCH2T27 from "../pages/about-us/CATCH2T27/CATCH2T27";
+import CATCH2T26 from "../pages/about-us/CATCH2T26/CATCH2T26";
+import CATCH2T25 from "../pages/about-us/CATCH2T25/CATCH2T25";
+import CATCH2T24 from "@/pages/about-us/CATCH2T24/CATCH2T24";
 import Processes from "../pages/student-services/processes/Processes";
 import StudentServices from "../pages/student-services/StudentServices";
 import Support from "../pages/support/Support";
@@ -41,6 +44,9 @@ const routes = [
     { path: "/about-us/indie", element: <INDIE />, name: "Initiators of Development in Interactive Entertainment" },
     { path: "/about-us/msc", element: <MSC />, name: "Microsoft Student Community" },
     { path: "/about-us/catch2t27", element: <CATCH2T27 />, name: "Computer Batch 2T27" },
+    { path: "/about-us/catch2t26", element: <CATCH2T26 />, name: "Computer Batch 2T26" },
+    { path: "/about-us/catch2t25", element: <CATCH2T25 />, name: "Computer Batch 2T25" },
+    { path: "/about-us/catch2t24", element: <CATCH2T24 />, name: "Computer Batch 2T24" },
     { path: "/student-services", element: <StudentServices/>, name: "Student Services" },
     { path: "/student-services/processes", element: <Processes />, name: "Processes" },
     { path: "/support", element: <Support />, name: "Support" },

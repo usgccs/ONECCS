@@ -9,7 +9,6 @@ const HomePage = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <HeroSection/>
-      <ExampleWrapper/>
       <HomeTOC/>
       <RevealBento/>
       <DiscordSection/>

@@ -6,7 +6,7 @@ import { SiGithub, SiTiktok, SiTwitter, SiYoutube, SiFacebook, SiInstagram, SiTe
 
 export const RevealBento = () => {
   return (
-    <div className="bg-[#23453D] w-full text-white px-12 py-8 pb-20">
+    <div className="bg-[#398364] w-full text-white px-12 py-8 pb-20">
       <div className="p-4 mb-4 md:p-10">
         <p className="text-4xl font-bold text-center justify-center items-center md:text-5xl lg:text-6xl">
         Communication Channels
