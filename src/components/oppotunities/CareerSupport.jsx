@@ -5,7 +5,7 @@ const CareerSupport = () => {
           <div className="w-auto md:w-auto lg:w-1/3 mx-auto">
             <img
               src={
-                "https://lh4.googleusercontent.com/ItXFNzeNhK9KhzNdyid2tBWHAc9JDPPAqIAOzs2I9zes6Rq58H6vRbMes80jA05YO7eDZZusA_GAbpdIT1HM-mu6um8FoSmH8RQGrWIJbO98JX-YWfrIcc962RM_zQpSdw=w1280"
+                "https://lh6.googleusercontent.com/1GUBgWVrIvWAxypcvLFgd7uqjtVxQwyu5Bevqosqhk7Cav-H0jnXKm6GFL-wi7xJ-nofaxCfQaXlEuU3cQdOdgw2kV3_h0078PUyIRjz0qcYZZAC08z_nemNdhA5EY2bEw=w1280"
               }
               className="object-cover rounded-2xl drop-shadow-md w-full h-auto"
             />
