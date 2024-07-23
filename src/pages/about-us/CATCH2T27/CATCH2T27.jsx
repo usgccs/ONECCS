@@ -145,7 +145,7 @@ const CATCH2T27 = () => { // TODO: Change this to your organization name
           </div>
         )}
 
-        {ongoingProjects && (
+        {Boolean(ongoingProjects?.length) && (
           // Section Header (Ongoing Projects)
           <div>
             <SectionHeader header={"Ongoing Projects"} />
@@ -153,7 +153,7 @@ const CATCH2T27 = () => { // TODO: Change this to your organization name
           </div>
         )}
 
-        {upcomingProjects && (
+        {Boolean(upcomingProjects?.length) && (
           <div>
             <SectionHeader header={"Upcoming Projects"} />
             <EventsSection events={upcomingProjects} />
@@ -162,7 +162,7 @@ const CATCH2T27 = () => { // TODO: Change this to your organization name
         
         {
           /* Ensure pastProjects does not render when there are no past projects */
-          pastProjects?.length && (
+          Boolean(pastProjects?.length) && (
             <div className="flex w-full flex-col">
             <SectionHeader header={"Past Projects"} />
             <div className="flex w-full">
@@ -172,7 +172,7 @@ const CATCH2T27 = () => { // TODO: Change this to your organization name
           </div>
         )}
 
-          {persons && (
+          {Boolean(persons?.length) && (
             <div className="flex w-full flex-col">
                 <SectionHeader header={"Contact Persons"} />
                 <div className="flex w-full">

@@ -130,7 +130,7 @@ import {
             </div>
           )}
   
-          {ongoingProjects && (
+          {Boolean(ongoingProjects?.length) && (
             // Section Header (Ongoing Projects)
             <div>
               <SectionHeader header={"Ongoing Projects"} />
@@ -138,14 +138,14 @@ import {
             </div>
           )}
   
-          {upcomingProjects && (
+          {Boolean(upcomingProjects?.length) && (
             <div>
               <SectionHeader header={"Upcoming Projects"} />
               <EventsSection events={upcomingProjects} />
             </div>
           )}
   
-          {pastProjects && (
+          {Boolean(pastProjects?.length) && (
             <div className="flex w-full flex-col">
             <SectionHeader header={"Past Projects"} />
             <div className="flex w-full">
@@ -155,7 +155,7 @@ import {
           </div>
           )}
   
-          {persons && (
+          {Boolean(persons?.length) && (
             <div className="flex w-full flex-col">
                 <SectionHeader header={"Contact Persons"} />
                 <div className="flex w-full">
