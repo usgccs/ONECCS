@@ -145,7 +145,7 @@ const CSG = () => { // TODO: Change this to your organization name
           </div>
         )}
 
-        {ongoingProjects && (
+        {Boolean(ongoingProjects?.length) && (
           // Section Header (Ongoing Projects)
           <div>
             <SectionHeader header={"Ongoing Projects"} />
@@ -153,14 +153,14 @@ const CSG = () => { // TODO: Change this to your organization name
           </div>
         )}
 
-        {upcomingProjects && (
+        {Boolean(upcomingProjects?.length) && (
           <div>
             <SectionHeader header={"Upcoming Projects"} />
             <EventsSection events={upcomingProjects} />
           </div>
         )}
 
-        {pastProjects && (
+        {Boolean(pastProjects?.length) && (
           <div className="flex w-full flex-col">
           <SectionHeader header={"Past Projects"} />
           <div className="flex w-full">
@@ -170,7 +170,7 @@ const CSG = () => { // TODO: Change this to your organization name
         </div>
         )}
 
-          {persons && (
+          {Boolean(persons?.length) && (
             <div className="flex w-full flex-col">
                 <SectionHeader header={"Contact Persons"} />
                 <div className="flex w-full">

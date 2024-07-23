@@ -6,7 +6,7 @@ import {
     useContentfulOrganization,
   } from "../../../hooks/useContentful";
   import React, { useEffect, useState } from "react";
-  import "./MSC.css";
+  import "./LSCS.css";
   import OrgDescription from "../../../components/orgDescription/OrgDescription";
   import ImageCarousel from "../../../components/imageCarousel/ImageCarousel";
   import OrgHeader from "../../../components/orgheader/OrgHeader";
@@ -15,8 +15,8 @@ import {
   import EventsSection from "../../../components/events/EventsSection";
   import Contacts from "../../../components/contacts/Contacts";
   
-  const MSC = () => { // TODO: Change this to your organization name
-    const orgKey = "MSC"; // TODO: Change this to your orgKey
+  const LSCS = () => { // TODO: Change this to your organization name
+    const orgKey = "LSCS"; // TODO: Change this to your orgKey
   
     const [organization, setOrganization] = useState(null);
   
@@ -103,7 +103,7 @@ import {
     };
   
     return (
-      <div className="header_main_msc">
+      <div className="header_main_lscs">
         
         <div>
           {
@@ -168,4 +168,4 @@ import {
     );
   };
   
-  export default MSC; // TODO: Change this to your organization name
+  export default LSCS; // TODO: Change this to your organization name

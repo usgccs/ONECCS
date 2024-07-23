@@ -15,6 +15,7 @@ import CATCH2T27 from "../pages/about-us/CATCH2T27/CATCH2T27";
 import CATCH2T26 from "../pages/about-us/CATCH2T26/CATCH2T26";
 import CATCH2T25 from "../pages/about-us/CATCH2T25/CATCH2T25";
 import CATCH2T24 from "@/pages/about-us/CATCH2T24/CATCH2T24";
+import LSCS from "../pages/about-us/LSCS/LSCS";
 import Processes from "../pages/student-services/processes/Processes";
 import StudentServices from "../pages/student-services/StudentServices";
 import Support from "../pages/support/Support";
@@ -26,6 +27,7 @@ import StudentWelfare from "../pages/support/student-welfare/StudentWelfare";
 import AboutUs from "../pages/about-us/AboutUs";
 import Opportunities from "@/pages/opportunities/Opportunities";
 import CareerHub from "@/pages/careerhub/CareerHub";
+// import { path } from "animejs";
 // import { path } from "animejs";
 
 
@@ -47,6 +49,7 @@ const routes = [
     { path: "/about-us/catch2t26", element: <CATCH2T26 />, name: "Computer Batch 2T26" },
     { path: "/about-us/catch2t25", element: <CATCH2T25 />, name: "Computer Batch 2T25" },
     { path: "/about-us/catch2t24", element: <CATCH2T24 />, name: "Computer Batch 2T24" },
+    { path: "/about-us/lscs", element: <LSCS />, name: "La Salle Computer Society" },
     { path: "/student-services", element: <StudentServices/>, name: "Student Services" },
     { path: "/student-services/processes", element: <Processes />, name: "Processes" },
     { path: "/support", element: <Support />, name: "Support" },
