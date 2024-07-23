@@ -35,39 +35,27 @@ const PTS = () => {
     useEffect(() => {
         fetchOrganization().then((entries) => {
             setOrganization(entries.items[0].fields);
-            console.log("Organization");
-            console.log(entries.items[0].fields);
         });
     }, [fetchOrganization]);
 
     useEffect(() => {
         fetchProjects().then((entries) => {
-            console.log("Projects");
-            console.log(entries.items);
             filterProjects(entries.items);
         });
     }, [fetchProjects]);
 
     useEffect(() => {
-        console.log("Upcoming Projects");
-        console.log(upcomingProjects);
     }, [upcomingProjects]);
 
     useEffect(() => {
-        console.log("Ongoing Projects");
-        console.log(ongoingProjects);
     }, [ongoingProjects]);
 
     useEffect(() => {
-        console.log("Past Projects");
-        console.log(pastProjects);
     }, [pastProjects]);
 
     useEffect(() => {
         fetchPersons().then((entries) => {
             setPersons(entries.items);
-            console.log("Persons");
-            console.log(entries.items);
         });
     }, [fetchPersons]);
 
@@ -89,10 +77,6 @@ const PTS = () => {
                     past.push(project);
                     break;
                 default:
-                    console.log(
-                        "Unknown project classification:",
-                        project.fields.projectClassification
-                    );
             }
         });
         setUpcomingProjects(upcoming);

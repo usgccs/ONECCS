@@ -27,7 +27,6 @@ function ToDo() {
     //[sam, min8, cj]
 
     useEffect(() => {
-        console.log("This is counter");
     }, [counter])
 
 
@@ -44,8 +43,7 @@ function ToDo() {
     //Conditional rendering
     showTodos ? (
         <div>
-            <input type="text" value={todo} onChange={(e) => {setTodo(e.target.value)
-            console.log(todo)}} />
+            <input type="text" value={todo} onChange={(e) => {setTodo(e.target.value)}} />
             <button onClick={() => setTodos([...todos, todo])}>Add</button>
 
             {//Mapping of arrays

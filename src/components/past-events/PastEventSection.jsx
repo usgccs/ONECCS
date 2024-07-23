@@ -10,7 +10,6 @@ function PastEventsSection({ data }) {
             data
         );
     }, [])
-    console.log(pastEvents)
 
   return (
     <section id="past-events" className="flex w-full xl:p-20 xl:px-60 lg:p-14 lg:px-20 sm:p-10 p-8 sm:px-20 bg-[#24453E] ">

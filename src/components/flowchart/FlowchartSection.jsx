@@ -9,8 +9,6 @@ function FlowchartList(prop) {
     const flowchartList = prop.flowchartList;
 
     useEffect(() => {
-        console.log("PROP");
-        console.log(flowchartList);
     })
 
     return (

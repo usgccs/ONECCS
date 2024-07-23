@@ -7,26 +7,22 @@ function ImageCarousel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    console.log("Autoplay started");           //will remove these
     const intervalId = setInterval(() => {
       nextImage();
     }, 3000);
 
     return () => {
-      console.log("Autoplay stopped");
       clearInterval(intervalId);
     };
   }, []);
 
   const nextImage = () => {
-    console.log("Next image");
     setCurrentImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevImage = () => {
-    console.log("Previous image");
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );

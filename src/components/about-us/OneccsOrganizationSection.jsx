@@ -8,8 +8,7 @@ import OrganizationItem from './OrganizationItem';
 const OneccsOrganizationSection = ({organizations}) => {
 
     useEffect(() => {
-        console.log("Organizations");
-        console.log(organizations);
+
     }, [organizations]);
     return (
         <div className="flex flex-col justify-center items-center py-10">
