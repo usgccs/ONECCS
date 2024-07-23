@@ -10,13 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/shared": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
     "animejs": "^3.2.2",
     "contentful": "^10.8.10",
     "framer-motion": "^11.2.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.1",
-    "react-router-dom": "^6.23.0"
+    "react-router-dom": "^6.23.0",
+    "react-use-measure": "^2.1.1",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

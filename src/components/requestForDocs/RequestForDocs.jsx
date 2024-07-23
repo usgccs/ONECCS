@@ -4,7 +4,7 @@ import "./RequestForDocs.css";
 const RequestForDocs = () => {
 
     return (
-        <div className="rfd__main_description">
+        <div className="rfd__main_description p-8 lg:p-24">
             <div className="flex flex-row justify-center items-center w-full">
                 <button className="w-fit bg-[#24453E] text-white font-light m-4">
                     <a href="https://ecom.dlsu.edu.ph/apps/ord/document/policies.asp" className="white-link">Online Request for Documents (ORD) Facility</a>
@@ -36,7 +36,7 @@ const RequestForDocs = () => {
                 <h4>▪ Check if grades have been posted (for recently-awarded grades only). One week after grade consultation day, only grades posted in <a href=""><u>https://my.dlsu.edu.ph/</u></a> will appear on your Transcript of Records </h4>
                 <h4>▪ Check the schedule for requesting Transcript of Records with Date of Graduation (for graduating students only). Please check the schedule via this link</h4>
                 <br></br>
-                <h4><a href="https://www.dlsu.edu.ph/offices/registrar/schedules/graduation_activities.pdf"><u>https://www.dlsu.edu.ph/offices/registrar/schedules/graduation_activities.pdf</u></a></h4>
+                <h4><a className="break-words" href="https://www.dlsu.edu.ph/offices/registrar/schedules/graduation_activities.pdf"><u>https://www.dlsu.edu.ph/offices/registrar/schedules/graduation_activities.pdf</u></a></h4>
             </div>
             <div className="rfd__description">
                 <h2>Payment Reminders</h2>
@@ -52,7 +52,7 @@ const RequestForDocs = () => {
             </div>
             <div className="rfd__description">
                 <h4>▪ Delivery of your documents will be done via courier. Rates for the delivery  couriers may be found here:</h4>
-                <h4><a href="https://ecom.dlsu.edu.ph/apps/ord/document/popDelivery.asp"><u>https://ecom.dlsu.edu.ph/apps/ord/document/popDelivery.asp</u></a></h4>
+                <h4><a className="break-words" href="https://ecom.dlsu.edu.ph/apps/ord/document/popDelivery.asp"><u>https://ecom.dlsu.edu.ph/apps/ord/document/popDelivery.asp</u></a></h4>
                 <h4>▪ Regular processing days will be eight (8) working days (excluding Saturdays, Sundays, and holidays). Days when classes and office work are suspended will not be counted in the number of processing days.</h4>
                 <h4>▪ The processing period is separate from the delivery period.  Delivery of documents may take 2 to 5 additional days (or longer) depending on the address specified in the request and on the courier’s standard serviceable areas.</h4>
                 <h4>▪ The following documents, which are not available via the online facility, may be requested through the Enrollment Services Hub’s official email address at <a href="mailto: hub@dlsu.edu.ph"><u>hub@dlsu.edu.ph</u></a>:</h4>
@@ -64,7 +64,7 @@ const RequestForDocs = () => {
                 <br></br>
                 <h4>Please refer to this link for requests for Certification, Authentication, and Verification (CAV):</h4>
                 <br></br>
-                <h4><a href=""><u>https://www.dlsu.edu.ph/offices/hub/cav-ched-requests/</u></a></h4>
+                <h4><a className="break-words" href=""><u>https://www.dlsu.edu.ph/offices/hub/cav-ched-requests/</u></a></h4>
             </div>
 
         </div >

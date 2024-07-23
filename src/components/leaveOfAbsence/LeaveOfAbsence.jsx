@@ -4,7 +4,7 @@ import "./LeaveOfAbsence.css";
 const LeaveOfAbsence = () => {
 
     return (
-        <div className="loa__main_description">
+        <div className="loa__main_description p-8 lg:p-24">
             <br></br>
             <div className="loa__description">
                 <p>A leave of absence, or LOA, refers to when a student files for a leave of <strong>one term up to a maximum of two terms. </strong> </p>
@@ -34,7 +34,7 @@ const LeaveOfAbsence = () => {
                 <h4>▪ Clearance from the Office of Admissions and Scholarships (for OAS scholars only)</h4>
             </div>
             <div className="flex flex-col justify-center items-center w-full">
-                <button className="w-96 bg-[#24453E] text-white font-light m-4">
+                <button className="w-fit bg-[#24453E] text-white font-light m-4">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKXexOQ5pXt4hlbPjQgzDrpaSQKjqca8rx816TtuWJj_9vFQ/viewform" className="white-link">UG/GS Application for Leave of Absence</a>
                 </button>
             </div>

@@ -28,6 +28,7 @@ import OrgHeader from "../../../components/orgheader/OrgHeader";
 import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../../components/past-events/PastEventSection";
 import EventsSection from "../../../components/events/EventsSection";
+import Contacts from "../../../components/contacts/Contacts";
 
 const CATCH2T27 = () => { // TODO: Change this to your organization name
   const orgKey = "CATCH2T27"; // TODO: Change this to your orgKey
@@ -171,19 +172,14 @@ const CATCH2T27 = () => { // TODO: Change this to your organization name
           </div>
         )}
 
-        {
-          // Conditional rendering of data
-          persons && (
-            <div>
-              <h1>Contact Person</h1>
-              <ul>
-                {persons.map((person, index) => (
-                  <li key={index}>{person.fields.name}</li>
-                ))}
-              </ul>
-            </div>
-          )
-        }
+          {persons && (
+            <div className="flex w-full flex-col">
+                <SectionHeader header={"Contact Persons"} />
+                <div className="flex w-full">
+                    <Contacts data={persons} />
+                </div>
+          </div>
+            )}
       </div>
     </div>
   );

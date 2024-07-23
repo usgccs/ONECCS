@@ -4,7 +4,7 @@ import "./ShiftingProcesses.css";
 const ShiftingProcesses = () => {
 
     return (
-        <div className="sp__main_description">
+        <div className="sp__main_description p-8 lg:p-24">
             <br></br>
             <div className="sp__description">
                 <h3>The schedule and procedure for shifting can be found <u><a href="https://www.dlsu.edu.ph/wp-content/uploads/pdf/registrar/schedules/shifting_ug.pdf">here</a></u>.</h3>

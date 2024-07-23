@@ -5,7 +5,7 @@ const CareerSupport = () => {
           <div className="w-auto md:w-auto lg:w-1/3 mx-auto">
             <img
               src={
-                "https://res.cloudinary.com/dnlrbmzns/image/upload/v1718655631/pdkoqsztsfs5y7txpama.png"
+                "https://lh6.googleusercontent.com/1GUBgWVrIvWAxypcvLFgd7uqjtVxQwyu5Bevqosqhk7Cav-H0jnXKm6GFL-wi7xJ-nofaxCfQaXlEuU3cQdOdgw2kV3_h0078PUyIRjz0qcYZZAC08z_nemNdhA5EY2bEw=w1280"
               }
               className="object-cover rounded-2xl drop-shadow-md w-full h-auto"
             />

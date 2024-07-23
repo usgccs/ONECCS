@@ -24,17 +24,21 @@ import {
     SiGodaddy,
   } from "react-icons/si";
 
+  import LargeWhiteSVG from '/LargeWhite.png';
+  import CSG from '/csg.png';
+  import C24 from '/C24.png';
+  
 const HeroSection = () => {
   return (
     <div className="w-full bg-[#24453E]">
-    <section className="text-slat-100 overflow-hidden bg-[url('/hero.png')] bg-top bg-no-repeat min-h-screen px-8 py-24 md:px-12 md:py-32">
+    <section className="text-slat-100 overflow-hidden bg-[url('/heroo.png')] bg-left bg-no-repeat min-h-screen px-8 py-24 md:px-12 md:py-32 2xl:bg-top">
       <div className="relative mx-auto max-w-5xl">
         <div className="pointer-events-none relative z-10">
         <Reveal>
-            <p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-3xl">
+            <p className="pointer-events-auto max-w-xl text-xl text-slate-300 md:text-3xl">
               De La Salle University
             </p>
-            <p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-3xl">
+            <p className="pointer-events-auto max-w-xl text-xl text-slate-300 md:text-3xl">
               College of Computer Studies
             </p>
           </Reveal>
@@ -50,14 +54,15 @@ const HeroSection = () => {
           </Reveal>
           
           <Reveal>
-            <button className="pointer-events-auto mt-4 rounded-full border border-white bg-transparent px-4 py-2 font-medium text-white transition-all active:scale-95 md:mt-6">
+            <button className="pointer-events-auto mt-4 rounded-full border border-white text-md md:text-lg bg-transparent px-4 py-2 font-medium hover:color-[#535bf2] text-white transition-all active:scale-95 md:mt-6"
+            onClick={() => document.getElementById('table-of-contents').scrollIntoView({ behavior: 'smooth' })}>
             Get Started
             </button>
           </Reveal>
         </div>
       </div>
       <Reveal>
-      <div className="flex  overflow-hidden mt-20">
+      <div className="flex overflow-hidden mt-20">
         <TranslateWrapper>
           <LogoItemsTop />
         </TranslateWrapper>
@@ -142,6 +147,8 @@ const TranslateWrapper = ({ children, reverse }) => {
     );
   };
 
+/*
+
   const LogoItem = ({ Icon }) => {
     return (
       <a
@@ -151,6 +158,31 @@ const TranslateWrapper = ({ children, reverse }) => {
         className="w-16 md:w-24 h-16 md:h-24 flex justify-center items-center hover:bg-slate-200 text-gray-400 transition-colors"
       >
         <Icon className="text-6xl md:text-7xl" />
+      </a>
+    );
+  };
+
+  */
+
+  const LogoItem = ({ Icon, isImage = false }) => {
+    return (
+      <a
+        href="/"
+        rel="nofollow"
+        target="_blank"
+        className={`w-16 md:w-24 h-16 md:h-24 flex justify-center items-center hover:bg-slate-500 text-gray-400 transition-colors ${
+          isImage ? "group" : ""
+        }`}
+      >
+        {isImage ? (
+          <img
+            src={Icon}
+            className="text-6xl md:text-7xl group-hover:filter group-hover:grayscale"
+            alt=""
+          />
+        ) : (
+          <Icon className="text-6xl md:text-7xl" />
+        )}
       </a>
     );
   };
@@ -165,9 +197,9 @@ const TranslateWrapper = ({ children, reverse }) => {
       <LogoItem Icon={SiAirtable} />
       <LogoItem Icon={SiAmazon} />
       <LogoItem Icon={SiBox} />
-      <LogoItem Icon={SiBytedance} />
-      <LogoItem Icon={SiChase} />
-      <LogoItem Icon={SiCloudbees} />
+      <LogoItem Icon={C24} isImage={true} />
+      <LogoItem Icon={CSG} isImage={true} />
+      <LogoItem Icon={LargeWhiteSVG} isImage={true} />
     </>
   );
 

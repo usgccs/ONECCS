@@ -11,6 +11,7 @@ import OrgHeader from "../../../components/orgheader/OrgHeader";
 import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../../components/past-events/PastEventSection";
 import EventsSection from "../../../components/events/EventsSection";
+import Contacts from "../../../components/contacts/Contacts";
 
 const INDIE = () => {
     const orgKey = "INDIE";
@@ -102,71 +103,66 @@ const INDIE = () => {
     return (
         <div className="header_main_indie">
 
+        <div>
+          {
+            // Conditional rendering of data
+            organization && (
+              <div>
+                <OrgHeader
+                  imgUrl={organization.orgLogo.fields.file.url}
+                  orgKey={organization.orgKey}
+                  orgName={organization.orgName}
+                />
+                <OrgDescription
+                  orgName={organization.orgName}
+                  orgDescription={organization.orgDescription}
+                />
+              </div>
+            )
+          }
+  
+          {organization?.orgImages && (
+            // Org Images Components
             <div>
-                {
-                    // Conditional rendering of data
-                    organization && (
-                        <div>
-                            <OrgHeader
-                                imgUrl={organization.orgLogo.fields.file.url}
-                                orgKey={organization.orgKey}
-                                orgName={organization.orgName}
-                            />
-                            <OrgDescription
-                                orgName={organization.orgName}
-                                orgDescription={organization.orgDescription}
-                            />
-                        </div>
-                    )
-                }
-
-                {organization?.orgImages && (
-                    // Org Images Components
-                    <div>
-                        <ImageCarousel images={organization.orgImages} />
-                    </div>
-                )}
-
-                {ongoingProjects && (
-                    // Section Header (Ongoing Projects)
-                    <div>
-                        <SectionHeader header={"Ongoing Projects"} />
-                        <EventsSection events={ongoingProjects} />
-                    </div>
-                )}
-
-                {upcomingProjects && (
-                    <div>
-                        <SectionHeader header={"Upcoming Projects"} />
-                        <EventsSection events={upcomingProjects} />
-                    </div>
-                )}
-
-                {pastProjects && (
-                    <div className="flex w-full flex-col">
-                    <SectionHeader header={"Past Projects"} />
-                    <div className="flex w-full">
-                      
-                      <PastEventsSection data={pastProjects} />
-                    </div>
-                  </div>
-                )}
-
-                {
-                    // Conditional rendering of data
-                    persons && (
-                        <div>
-                            <h1>Contact Person</h1>
-                            <ul>
-                                {persons.map((person, index) => (
-                                    <li key={index}>{person.fields.name}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    )
-                }
+              <ImageCarousel images={organization.orgImages} />
             </div>
+          )}
+  
+          {/* {ongoingProjects && (
+            // Section Header (Ongoing Projects)
+            <div>
+              <SectionHeader header={"Ongoing Projects"} />
+              <EventsSection events={ongoingProjects} />
+            </div>
+          )}
+  
+          {upcomingProjects && (
+            <div>
+              <SectionHeader header={"Upcoming Projects"} />
+              <EventsSection events={upcomingProjects} />
+            </div>
+          )} */}
+  
+          {pastProjects && (
+            <div className="flex w-full flex-col">
+            <SectionHeader header={"Past Projects"} />
+            <div className="flex w-full">
+              
+              <PastEventsSection data={pastProjects} />
+            </div>
+          </div>
+          )}
+  
+          {persons && (
+            <div className="flex w-full flex-col">
+                <SectionHeader header={"Contact Persons"} />
+                <div className="flex w-full">
+                    <Contacts data={persons} />
+                </div>
+          </div>
+            )}
         </div>
+      </div>
     );
 };
 

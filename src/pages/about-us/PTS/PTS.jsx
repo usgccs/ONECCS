@@ -11,6 +11,7 @@ import OrgHeader from "../../../components/orgheader/OrgHeader";
 import SectionHeader from "../../../components/sectionHeader/SectionHeader";
 import PastEventsSection from "../../../components/past-events/PastEventSection";
 import EventsSection from "../../../components/events/EventsSection";
+import Contacts from "../../../components/contacts/Contacts";
 
 const PTS = () => {
     const orgKey = "PTS";
@@ -152,21 +153,14 @@ const PTS = () => {
                   </div>
                 )}
 
-                {
-                    // Conditional rendering of data
-                    persons && (
-                        <div>
-                            <SectionHeader header={"Contact Persons"} />
-                            <div className="my-10 text-center">
-                                <ul>
-                                    {persons.map((person, index) => (
-                                        <li key={index}>{person.fields.name}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    )
-                }
+            {persons && (
+            <div className="flex w-full flex-col">
+                <SectionHeader header={"Contact Persons"} />
+                <div className="flex w-full">
+                    <Contacts data={persons} />
+                </div>
+          </div>
+            )}
             </div>
         </div>
     );

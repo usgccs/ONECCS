@@ -4,13 +4,13 @@ TODO:
 pre-requisite:
 - put your organization data in contentful
 
-1. create orgpage folder under src/pages/about-us (ex. about-us/LSCS) - DONE
-2. create LSCS.jsx and LSCS.css under orgpage folder - DONE
-3. copy the code below to LSCS.jsx file and the LSCS.css file - DONE
-4. rename the classnames and variables to your organization name (ex. LSCS) - DONE
+1. create orgpage folder under src/pages/about-us (ex. about-us/LSCS)
+2. create LSCS.jsx and LSCS.css under orgpage folder
+3. copy the code below to LSCS.jsx file and the LSCS.css file
+4. rename the classnames and variables to your organization name (ex. LSCS)
    * classname, orgKey, and export default in the bottom of the file
-5. rename the orgname in the css file (ex. .header_main_lscs) - DONE
-6. add LSCS routes to components/routes.jsx route should be about-us/LSCS - DONE
+5. rename the orgname in the css file (ex. .header_main_lscs)
+6. add LSCS routes to components/routes.jsx route should be about-us/LSCS
    *ensure that you have imported the file properly in routes.jsx
 7. View your new page in the browser to see if it works
 
@@ -21,7 +21,7 @@ import {
   useContentfulOrganization,
 } from "../../../hooks/useContentful";
 import React, { useEffect, useState } from "react";
-import "./ACM.css";
+import "./LCCSG.css";
 import OrgDescription from "../../../components/orgDescription/OrgDescription";
 import ImageCarousel from "../../../components/imageCarousel/ImageCarousel";
 import OrgHeader from "../../../components/orgheader/OrgHeader";
@@ -30,8 +30,8 @@ import PastEventsSection from "../../../components/past-events/PastEventSection"
 import EventsSection from "../../../components/events/EventsSection";
 import Contacts from "../../../components/contacts/Contacts";
 
-const ACM = () => { // TODO: Change this to your organization name
-  const orgKey = "ACM"; // TODO: Change this to your orgKey
+const LCCSG = () => { // TODO: Change this to your organization name
+  const orgKey = "LCCSG"; // TODO: Change this to your orgKey
 
   const [organization, setOrganization] = useState(null);
 
@@ -118,7 +118,7 @@ const ACM = () => { // TODO: Change this to your organization name
   };
 
   return (
-    <div className="header_main_acm">
+    <div className="header_main_lccsg">
 
       <div>
         {
@@ -145,7 +145,7 @@ const ACM = () => { // TODO: Change this to your organization name
           </div>
         )}
 
-        {ongoingProjects && (
+        {/* {ongoingProjects && (
           // Section Header (Ongoing Projects)
           <div>
             <SectionHeader header={"Ongoing Projects"} />
@@ -158,7 +158,7 @@ const ACM = () => { // TODO: Change this to your organization name
             <SectionHeader header={"Upcoming Projects"} />
             <EventsSection events={upcomingProjects} />
           </div>
-        )}
+        )} */}
 
         {pastProjects && (
           <div className="flex w-full flex-col">
@@ -170,7 +170,7 @@ const ACM = () => { // TODO: Change this to your organization name
         </div>
         )}
 
-            {persons && (
+          {persons && (
             <div className="flex w-full flex-col">
                 <SectionHeader header={"Contact Persons"} />
                 <div className="flex w-full">
@@ -183,4 +183,4 @@ const ACM = () => { // TODO: Change this to your organization name
   );
 };
 
-export default ACM; // TODO: Change this to your organization name
+export default LCCSG; // TODO: Change this to your organization name
