@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import anime from "animejs";
 import { useAnimation, useInView, motion } from "framer-motion";
+import ScrollingSection from "./ScrollingSection";
 import {
     SiNike,
     Si3M,
@@ -27,8 +28,8 @@ import {
 const HeroSection = () => {
   return (
     <div className="w-full bg-[#24453E]">
-    <section className="text-slat-100 overflow-hidden bg-[url('/heroo.png')] bg-left bg-no-repeat min-h-screen px-8 py-24 md:px-12 md:py-32 2xl:bg-top">
-      <div className="relative mx-auto max-w-5xl">
+    <section className="text-slat-100 overflow-hidden bg-[url('/heroo.png')] bg-left bg-no-repeat min-h-screen  py-24  md:py-32 2xl:bg-top">
+      <div className="relative mx-auto px-8 md:px-12 max-w-5xl">
         <div className="pointer-events-none relative z-10">
         <Reveal>
             <p className="pointer-events-auto max-w-xl text-xl text-slate-300 md:text-3xl">
@@ -55,34 +56,15 @@ const HeroSection = () => {
             Get Started
             </button>
           </Reveal>
+          
         </div>
-      </div>
-      <Reveal>
-      <div className="flex overflow-hidden mt-20">
-        <TranslateWrapper>
-          <LogoItemsTop />
-        </TranslateWrapper>
-        <TranslateWrapper>
-          <LogoItemsTop />
-        </TranslateWrapper>
-        <TranslateWrapper>
-          <LogoItemsTop />
-        </TranslateWrapper>
-      </div>
         
-      <div className="flex overflow-hidden mt-4">
-        <TranslateWrapper reverse>
-          <LogoItemsBottom />
-        </TranslateWrapper>
-        <TranslateWrapper reverse>
-          <LogoItemsBottom />
-        </TranslateWrapper>
-        <TranslateWrapper reverse>
-          <LogoItemsBottom />
-        </TranslateWrapper>
       </div>
-      </Reveal>
+      
+      <ScrollingSection/>
+      
     </section>
+    
     </div>
   );
 };
