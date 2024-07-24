@@ -12,34 +12,7 @@ import InitiativeItem from "./InitiativesItem";
 
 function InitiativesSection({ data }) {
 
-    // const [initiatives, setInitiatives] = useState([]);
 
-    // useEffect(() => {
-    //     setInitiatives(
-    //         [
-    //         {
-    //             name: "Extra Allowance Program",
-    //             date: "2022-10-01",
-    //             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    //             photoUrl: "/financialAid/extra-allowance.jpg"
-    //         },
-    //         {
-    //             name: "Single Parent Assistance Grant",
-    //             date: "2022-11-15",
-    //             description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //             photoUrl: "/financialAid/spa-grant.jpg"
-    //         },
-    //         {
-    //             name: "PWD Assistance Grant",
-    //             date: "2022-12-05",
-    //             description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    //             photoUrl: "/financialAid/pwd-grant.jpg"
-    //         }
-            
-    //     ]
-    //     );
-    // }, [])
-    // console.log(initiatives)
 
   return (
     <section id="past-events" className="flex w-full xl:p-20 xl:px-60 lg:p-14 lg:px-20 sm:p-10 p-8 sm:px-20 bg-[#24453E] ">

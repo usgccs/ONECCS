@@ -7,7 +7,6 @@ const EventItem = (evntProp) => {
         img = evntProp.img,
         extSite = evntProp.extSite;
 
-    console.log("THE EXTSITE IS " + extSite);
 
     return (
         <div className='event-item my-4 p-8 w-full py-8 px-24 lg:px-36'>

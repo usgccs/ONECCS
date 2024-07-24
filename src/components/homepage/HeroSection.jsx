@@ -23,10 +23,6 @@ import {
     SiGenius,
     SiGodaddy,
   } from "react-icons/si";
-
-  import LargeWhiteSVG from '/LargeWhite.png';
-  import CSG from '/csg.png';
-  import C24 from '/C24.png';
   
 const HeroSection = () => {
   return (
@@ -164,10 +160,13 @@ const TranslateWrapper = ({ children, reverse }) => {
 
   */
 
-  const LogoItem = ({ Icon, isImage = false }) => {
+  const LogoItem = ({ Icon, url, route, isImage = false }) => {
+    
+    
+
     return (
       <a
-        href="/"
+        href={`/about-us/${route}`}
         rel="nofollow"
         target="_blank"
         className={`w-16 md:w-24 h-16 md:h-24 flex justify-center items-center hover:bg-slate-500 text-gray-400 transition-colors ${
@@ -176,7 +175,7 @@ const TranslateWrapper = ({ children, reverse }) => {
       >
         {isImage ? (
           <img
-            src={Icon}
+            src={url}
             className="text-6xl md:text-7xl group-hover:filter group-hover:grayscale"
             alt=""
           />
@@ -188,35 +187,55 @@ const TranslateWrapper = ({ children, reverse }) => {
   };
 
 
-  const LogoItemsTop = () => (
-    <>
-      <LogoItem Icon={SiNike} />
-      <LogoItem Icon={Si3M} />
-      <LogoItem Icon={SiAbstract} />
-      <LogoItem Icon={SiAdobe} />
-      <LogoItem Icon={SiAirtable} />
-      <LogoItem Icon={SiAmazon} />
-      <LogoItem Icon={SiBox} />
-      <LogoItem Icon={C24} isImage={true} />
-      <LogoItem Icon={CSG} isImage={true} />
-      <LogoItem Icon={LargeWhiteSVG} isImage={true} />
-    </>
-  );
-
-  const LogoItemsBottom = () => (
-    <>
-      <LogoItem Icon={SiBmw} />
-      <LogoItem Icon={SiBurton} />
-      <LogoItem Icon={SiBuildkite} />
-      <LogoItem Icon={SiCouchbase} />
-      <LogoItem Icon={SiDailymotion} />
-      <LogoItem Icon={SiDeliveroo} />
-      <LogoItem Icon={SiEpicgames} />
-      <LogoItem Icon={SiGenius} />
-      <LogoItem Icon={SiGodaddy} />
-      <LogoItem Icon={SiHeroku} />
-    </>
-  );
+  const LogoItemsTop = () => {
+    
+    const PTS = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721850149/PTS_wrqym4.png";
+    const C24 = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721848507/C24_io8vjf.png";
+    const GDSC = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847872/GDSC_ptr6rv.png";
+    const C25 = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847873/C25_mjznqx.png";
+    const ACM = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847873/ACM_2_rpq2ug.png";
+    const C26 = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847874/C26_ix1vdu.png";
+    const LSCS = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847872/LSCS_zowcld.png";
+    
+    return (
+      <>
+        <LogoItem url={LSCS} route={"LSCS"} isImage={true} />
+        <LogoItem url={PTS} route={"PTS"} isImage={true} />
+        <LogoItem url={C24} route={"CATCH2T24"}isImage={true} />
+        <LogoItem url={GDSC} route={"GDSC"} isImage={true} />
+        <LogoItem url={C25} route={"CATCH2T25"} isImage={true} />
+        <LogoItem url={ACM} route={"ACM"} isImage={true} />
+        <LogoItem url={C26} route={"CATCH2T26"} isImage={true} />
+        <LogoItem url={LSCS} route={"LSCS"} isImage={true} />
+        <LogoItem url={PTS} route={"PTS"} isImage={true} />
+        <LogoItem url={C24} route={"CATCH2T24"} isImage={true} />
+      </>
+    );
+  };
+  
+  const LogoItemsBottom = () => {
+    const CSG = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721848507/CSG_gn6sfh.png";
+    const INDIE = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847872/INDIE_v9zivm.png";
+    const C27 = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721849773/C27_yavdbj.png";
+    const MSC = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847872/MSC_pd355z.png";
+    const LCCSG = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847872/LCCSG_xvcqru.png";
+    const SPRINT = "https://res.cloudinary.com/dnlrbmzns/image/upload/v1721847871/edited_sprint_image_t4yxlj.png";
+    
+    return (
+      <>
+        <LogoItem url={INDIE} route={"INDIE"} isImage={true} />
+      <LogoItem url={C27} route={"CATCH2T27"} isImage={true} />
+      <LogoItem url={MSC} route={"MSC"} isImage={true} />
+      <LogoItem url={CSG} route={"CSG"} isImage={true} />
+      <LogoItem url={LCCSG} route={"LCCSG"} isImage={true} />
+      <LogoItem url={SPRINT} route={""} isImage={true} />
+      <LogoItem url={INDIE} route={"INDIE"} isImage={true} />
+      <LogoItem url={C27} route={"CATCH2T27"} isImage={true} />
+      <LogoItem url={MSC} route={"MSC"} isImage={true} />
+      <LogoItem url={CSG} route={"CSG"} isImage={true} />
+      </>
+    );
+  };
 
 
 export default HeroSection;
