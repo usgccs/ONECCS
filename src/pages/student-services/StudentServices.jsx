@@ -43,7 +43,7 @@ const StudentServices = () => {
             <PageHeader header={"Student Services"} subheader1={"For your student concerns."} subheader2={"Find Enlistment and Academic Guides here."} />
             <SectionHeader header={"Enlistments"} />
             <EnlistmentSection />
-            <SectionHeader header={"Enrollment Schedule"} subheader1={"For Term 3, AY 2023 - 2024"} />
+            <SectionHeader header={"Enrollment Schedule"} subheader1={"For Term 1, AY 2024 - 2025"} />
             <EnrollmentSchedSection/>
 
             
