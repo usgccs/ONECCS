@@ -23,44 +23,44 @@ const Dropdown3 = () => {
         {showDropdown && (
           <div className="dropdown-info space-y-4 mb-6">
             <p className="text-center">
-              <b>Payment Deadlines for for A.Y. 2022-2023 Term 2</b>
+              <b>Payment Deadlines for for A.Y. 2024-2025 Term 1</b>
             </p>
 
             <ul className="listdropdown">
               <li>
                 Payment without Surcharge
                 <br />
-                Until January 28, 2023 (Saturday)
+                Until September 7, 2024 
               </li>
               <li>
                 Payment with Surcharge
                 <br />
-                From January 29, 2023 - February 11, 2023
+                From September 9,2024 - September 14,2024
               </li>
               <li>
-                Last day of Payment
+                LAST DAY of Payment & Payment of First Installment
+                <br />
+                September 16, 2024
+              </li>
+              {/* <li>
+                Payment of 2nd Half (out of 3) Installment
                 <br />
                 February 11, 2023
-              </li>
-              <li>
-                Payment of 2nd Half (Installment)
-                <br />
-                February 11, 2023
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <b>Auto-Dropping of Enrolled Course/s Without Payment</b>
                 <br />
                 February 11, 2023, 5:00 PM
-              </li>
+              </li> */}
               <li>
                 For 2/3 Installment Payments
                 <br />
-                March 3, 2023
+                October 19, 2024 at 5:00 PM
               </li>
               <li>
                 For 3/3 Installment Payments
                 <br />
-                April 22, 2023 (Saturday)
+                December 2, 2024
               </li>
             </ul>
 
