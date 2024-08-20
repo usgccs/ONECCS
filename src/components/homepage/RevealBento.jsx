@@ -7,8 +7,8 @@ import { SiGithub, SiTiktok, SiTwitter, SiYoutube, SiFacebook, SiInstagram, SiTe
 export const RevealBento = () => {
   return (
     <div className="bg-[#398364] w-full text-white px-12 py-8 pb-20">
-      <div className="p-4 mb-4 md:p-10">
-        <p className="text-4xl font-bold text-center justify-center items-center md:text-5xl lg:text-6xl">
+      <div className="w-full p-4 mb-4 md:p-10">
+        <p className="text-3xl font-bold text-center justify-center items-center md:text-5xl lg:text-6xl">
         Communication Channels
         </p>
         
@@ -67,7 +67,7 @@ const FacebookBlock = () => (
         <a href="https://www.facebook.com/DLSU.CSG" target="_blank" rel="noopener noreferrer">
         <SiFacebook className="size-12 rounded-xl transition duration-300 ease-in-out transform hover:scale-110 hover:text-blue-600" />
       </a>
-      <h1 className="text-4xl font-bold text-left align-middle leading-tight">
+      <h1 className="text-3xl md:text-4xl font-bold text-left align-middle leading-tight">
         Facebook
       </h1>
         </div>
@@ -88,7 +88,7 @@ const FacebookBlock = () => (
       <a href="https://www.instagram.com/dlsu_csg/" target="_blank" rel="noopener noreferrer">
         <SiInstagram className="size-12 rounded-xl hover:text-pink-600 transition-colors duration-300" />
       </a>
-      <h1 className="text-4xl font-bold text-center align-middle leading-tight">
+      <h1 className="text-3xl md:text-4xl font-bold text-center align-middle leading-tight">
         Instagram
       </h1>
         </div>
@@ -109,7 +109,7 @@ const TelegramBlock = () => (
         <a href="https://t.me/DLSU_CSG" target="_blank" rel="noopener noreferrer">
         <SiTelegram className="size-12 rounded-xl hover:text-blue-400 transition-colors duration-300" />
       </a>
-        <h1 className="text-4xl font-bold text-center align-middle leading-tight">
+        <h1 className="text-3xl md:text-4xl font-bold text-center align-middle leading-tight">
         Telegram
         </h1>
         </div>
